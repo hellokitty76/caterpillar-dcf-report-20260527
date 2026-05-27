@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Caterpillar DCF Native Report</title>
+<style>
+  :root{
+    --bg:#0b1020; --panel:#1c2639; --panel2:#202c42; --ink:#eef4ff; --muted:#94a3bb;
+    --line:#3358a6; --grid:#314058; --blue:#4d7dea; --green:#5fbd70; --red:#df6c65;
+    --gold:#d5a24a; --yellow:#ffcd11; --purple:#9c73e8;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Segoe UI",sans-serif;}
+  body{width:1320px;margin:0 auto;}
+  .page{width:1320px;min-height:3520px;background:#0b1020;padding-bottom:34px;}
+  header{height:242px;padding:38px 28px 0;background:#111a2d;border-bottom:4px solid var(--line);position:relative;}
+  .eyebrow{font-size:13px;color:#8ea0bd;font-weight:800;letter-spacing:.08em;text-transform:uppercase;}
+  h1{margin:12px 0 8px;font-size:38px;line-height:1.05;letter-spacing:-.01em;}
+  .meta{font-size:13px;color:#9fb0cc;font-weight:700}
+  .pricebox{position:absolute;right:36px;top:38px;text-align:right}
+  .pricebox .small{font-size:12px;color:#9fb0cc;font-weight:800}
+  .pricebox .price{font-size:43px;line-height:1.05;font-weight:900;margin-top:10px}
+  .pricebox .date{font-size:12px;color:#9fb0cc;margin-top:9px}
+  .badges{display:flex;gap:14px;margin-top:30px;align-items:center}
+  .badge{border-radius:999px;border:2px solid;padding:9px 18px;font-weight:900;font-size:14px;background:rgba(255,255,255,.03)}
+  .badge.red{border-color:#9e4b50;color:#ff8179}.badge.blue{border-color:#3e65ba;color:#6e99ff}.badge.green{border-color:#4d9360;color:#74da86}.badge.gold{border-color:#b9853d;color:#f1be63}
+  section{padding:0 12px;margin-top:40px}
+  .section-title{display:flex;align-items:center;gap:10px;font-size:24px;font-weight:950;margin:0 0 20px 0;padding-bottom:18px;border-bottom:3px solid var(--line)}
+  .chip{font-size:11px;letter-spacing:.06em;color:white;background:var(--blue);padding:6px 10px;border-radius:4px;font-weight:900}
+  .cards{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+  .card{background:var(--panel);border:1px solid #2c3850;border-radius:12px;padding:22px;min-height:146px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.02)}
+  .card .label{color:#93a1b9;font-size:12px;font-weight:900;letter-spacing:.04em}
+  .card .val{font-size:32px;font-weight:950;margin-top:18px;letter-spacing:-.02em}
+  .card .sub{font-size:13px;color:#9ba8bf;margin-top:12px;font-weight:800}
+  .card.red{border-color:#7b3942}.card.blue{border-color:#3555a0}.card.green{border-color:#438257}.card.gold{border-color:#9a733d}
+  .redtxt{color:var(--red)}.bluetxt{color:var(--blue)}.greentxt{color:var(--green)}.goldtxt{color:var(--gold)}.yellowtxt{color:var(--yellow)}
+  .analysis-box{margin-top:20px;background:#1a263d;border:2px solid #2856ac;border-left-width:5px;border-radius:10px;padding:26px 28px}
+  .analysis-box h3{margin:0 0 18px;font-size:18px}
+  .analysis-box p{font-size:15px;line-height:1.8;color:#d5def0;font-weight:700;margin:0 0 12px}
+  .mini-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px}
+  .mini{background:#263247;border:2px solid;border-radius:8px;padding:18px;min-height:116px}
+  .mini h4{margin:0 0 10px;font-size:13px}.mini p{font-size:12px;line-height:1.55;color:#b9c4d8;margin:0;font-weight:700}
+  .mini.purple{border-color:#7758be}.mini.gold{border-color:#9b733e}.mini.blue{border-color:#4668b5}.mini.green{border-color:#4f8d61}
+  .charts{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .chart-card{background:var(--panel);border:1px solid #2c3850;border-radius:12px;padding:24px;min-height:365px;overflow:hidden}
+  .chart-title{font-size:14px;color:#a9b6ce;font-weight:950;margin-bottom:18px;letter-spacing:.04em}
+  .chart-svg{width:100%;height:252px}.grid-line{stroke:var(--grid);stroke-width:1}.axis{fill:#8290aa;font-size:12px;font-weight:800}.xlab{fill:#8f9bb2;font-size:12px;font-weight:900}
+  .bar.hist{fill:#3a465b}.bar.base{fill:#416ee0}.bear{fill:#ba4c4d}.base{fill:#4f7fe6}.bull{fill:#58a762}
+  .line{fill:none;stroke-width:4}.bear-stroke{stroke:#ba4c4d}.base-stroke{stroke:#4f7fe6}.bull-stroke{stroke:#58a762}
+  .bear-dot{fill:#ba4c4d}.base-dot{fill:#4f7fe6}.bull-dot{fill:#58a762}
+  .legend{display:flex;gap:18px;justify-content:center;color:#aab5c9;font-size:12px;font-weight:900;margin-bottom:4px}.legend span:before{content:"";display:inline-block;width:18px;height:8px;border-radius:3px;margin-right:6px}.legend .r:before{background:#ba4c4d}.legend .b:before{background:#4f7fe6}.legend .g:before{background:#58a762}
+  .football{padding:8px 0 0}.ff-row{display:grid;grid-template-columns:86px 1fr 64px;gap:14px;align-items:center;margin:23px 0;color:#aab7cc;font-size:13px;font-weight:900}.ff-track{height:37px;background:#22304a;border-radius:7px;overflow:hidden}.ff-bar{height:100%;border-radius:7px}.ff-bar.current{background:#c8913f}.ff-row b{text-align:right;color:#dbe5f6}.ff-axis{display:flex;justify-content:space-between;margin-left:100px;color:#79879f;font-size:12px;font-weight:800}
+  .read-box{margin-top:24px;background:#1a263d;border:2px solid #2856ac;border-left-width:5px;border-radius:10px;padding:24px}
+  .read-box h3{margin:0 0 14px;font-size:18px}.read-box p{margin:0 0 12px;font-size:14px;line-height:1.85;color:#d8e0ef;font-weight:750}
+  table{width:100%;border-collapse:collapse;background:#11182a;border-radius:10px;overflow:hidden;font-size:13px}
+  th{background:#263247;color:#aebbd0;font-size:12px;text-align:right;padding:14px 12px;font-weight:950;letter-spacing:.04em}
+  th:first-child,td:first-child{text-align:left}
+  td{text-align:right;padding:14px 12px;border-bottom:1px solid #2c354a;color:#dbe4f6;font-weight:800}
+  tr:nth-child(even) td{background:#141d31} tr.highlight td{background:#1b2a4d}
+  .heat td:not(:first-child){font-weight:950}.heat .hot{background:#31533e;color:#86e18e}.heat .mid{background:#283f65;color:#7fa5ff}.heat .cool{background:#3a3445;color:#e0b86b}.heat .cold{background:#41313a;color:#ee817b}
+  .source{font-size:12px;color:#8795ac;font-weight:750;line-height:1.65;margin-top:18px}
+  footer{padding:32px 14px 0;color:#8391aa;font-size:12px;line-height:1.6;font-weight:750}
+  /* External Audit / Model QA */
+  .audit-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+  .audit-card{background:var(--panel);border:1px solid #2c3850;border-radius:12px;padding:22px;border-left:5px solid #3358a6;min-height:170px}
+  .audit-card.ok{border-left-color:#5fbd70}
+  .audit-card.warn{border-left-color:#d5a24a}
+  .audit-card .audit-tag{font-size:11px;letter-spacing:.08em;font-weight:900;color:#aebbd0;text-transform:uppercase;margin-bottom:10px}
+  .audit-card.ok .audit-tag{color:#86e18e}
+  .audit-card.warn .audit-tag{color:#f1be63}
+  .audit-card h4{margin:0 0 10px;font-size:16px;line-height:1.35;color:#eef4ff}
+  .audit-card p{margin:0;font-size:13px;line-height:1.7;color:#c4d0e6;font-weight:700}
+  .wacc-sens{margin-top:22px;background:var(--panel);border:1px solid #2c3850;border-radius:12px;padding:24px}
+  .wacc-sens .ws-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+  .wacc-sens .ws-head h3{margin:0;font-size:16px;color:#eef4ff}
+  .wacc-sens .ws-note{font-size:12px;color:#8795ac;font-weight:800}
+  .wacc-svg{height:286px}
+  .wacc-bar.wacc-lo{fill:#5fbd70}
+  .wacc-bar.wacc-mid{fill:#4f7fe6}
+  .wacc-bar.wacc-base{fill:#9c73e8}
+  .wacc-bar.wacc-hi{fill:#df6c65}
+  .bar-val{fill:#dbe5f6;font-size:13px;font-weight:900}
+  .current-line{stroke:#ffcd11;stroke-width:2;stroke-dasharray:6 5}
+  .current-lbl{fill:#ffcd11;font-size:12px;font-weight:900;letter-spacing:.02em}
+  .axis-title{fill:#8f9bb2;font-size:12px;font-weight:900;letter-spacing:.04em}
+  .ws-table{margin-top:18px}
+  .ws-table th,.ws-table td{text-align:center}
+  .ws-table th:first-child,.ws-table td:first-child{text-align:left}
+  .disclaimer-banner{margin-top:18px;background:#3a2a14;border:2px solid #d5a24a;border-radius:10px;padding:14px 18px;color:#f1be63;font-weight:900;font-size:14px;letter-spacing:.02em;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+  .disclaimer-banner .dis-tag{color:#0b1020;background:#ffcd11;padding:4px 10px;border-radius:4px;font-size:12px;letter-spacing:.06em}
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="eyebrow">EQUITY RESEARCH · DCF VALUATION REPORT · DEEP DIVE</div>
+    <h1>Caterpillar Inc. DCF Valuation Deep Dive</h1>
+    <div class="meta">NYSE: CAT · Analysis date: May 27, 2026 · Financial base: FY2025 10-K + Q1 2026 · Currency: USD</div>
+    <div class="pricebox"><div class="small">CURRENT PRICE / SHARE</div><div class="price">$908.89</div><div class="date">May 2026 · Market snapshot</div></div>
+    <div class="badges">
+      <div class="badge red">Conservative Bear: $136/share (-85.0%)</div>
+      <div class="badge blue">Conservative Base: $225/share (-75.2%)</div>
+      <div class="badge green">Conservative Bull: $350/share (-61.5%)</div>
+      <div class="badge gold">Operating DCF · 5-year · WACC 10.0%–12.0% · g 2.0%–3.0%</div>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-title">External Audit / Model QA <span class="chip">EXTERNAL AUDIT</span></div>
+    <div class="audit-grid">
+      <div class="audit-card ok">
+        <div class="audit-tag">✅ Facts &amp; DCF math</div>
+        <h4>Cross-checked by Qwen and DeepSeek</h4>
+        <p>FY2025 and Q1 2026 historicals reconcile to SEC XBRL. DCF mechanics and terminal value math are internally consistent for the stated assumptions.</p>
+      </div>
+      <div class="audit-card warn">
+        <div class="audit-tag">⚠ Sensitivity</div>
+        <h4>Highly sensitive to WACC and Cat Financial treatment</h4>
+        <p>Both reviewers flagged WACC as the dominant value driver and viewed 11% as high for CAT. The Cat Financial $5B–$15B operating net debt adjustment is judgmental, not a derived bridge.</p>
+      </div>
+      <div class="audit-card warn">
+        <div class="audit-tag">⚠ Scope</div>
+        <h4>Conservative operating DCF, not a full SOTP valuation</h4>
+        <p>A rigorous next step would separately value Machinery + Power &amp; Energy operating DCF and Cat Financial book/equity. Treat the output as an operating-company range only.</p>
+      </div>
+    </div>
+
+    <div class="wacc-sens">
+      <div class="ws-head">
+        <h3>WACC Sensitivity — Implied Value / Share</h3>
+        <span class="ws-note">Holds base UFCF, terminal growth 2.5%, shares 460.6M, operating adjustment $10B constant.</span>
+      </div>
+      <svg class="chart-svg wacc-svg" viewBox="0 0 1098 286" role="img">
+    <line x1="60" x2="1074" y1="242" y2="242" class="grid-line"/><text x="6" y="246" class="axis">$0</text><line x1="60" x2="1074" y1="202" y2="202" class="grid-line"/><text x="6" y="206" class="axis">$200</text><line x1="60" x2="1074" y1="162" y2="162" class="grid-line"/><text x="6" y="166" class="axis">$400</text><line x1="60" x2="1074" y1="122" y2="122" class="grid-line"/><text x="6" y="126" class="axis">$600</text><line x1="60" x2="1074" y1="82" y2="82" class="grid-line"/><text x="6" y="86" class="axis">$800</text><line x1="60" x2="1074" y1="42" y2="42" class="grid-line"/><text x="6" y="46" class="axis">$1000</text>
+    <line x1="60" x2="1074" y1="60.19999999999999" y2="60.19999999999999" class="current-line"/>
+    <text x="1068" y="52.19999999999999" text-anchor="end" class="current-lbl">Current price $909 (well above conservative DCF range)</text>
+    <rect x="60" y="162.2" width="78" height="79.80000000000001" rx="6" class="wacc-bar wacc-lo"/>
+        <text x="99" y="154.2" class="bar-val" text-anchor="middle">$399</text>
+        <text x="99" y="266" class="xlab" text-anchor="middle">7.5%</text><rect x="164" y="170" width="78" height="72" rx="6" class="wacc-bar wacc-lo"/>
+        <text x="203" y="162" class="bar-val" text-anchor="middle">$360</text>
+        <text x="203" y="266" class="xlab" text-anchor="middle">8.0%</text><rect x="268" y="176.39999999999998" width="78" height="65.60000000000001" rx="6" class="wacc-bar wacc-mid"/>
+        <text x="307" y="168.39999999999998" class="bar-val" text-anchor="middle">$328</text>
+        <text x="307" y="266" class="xlab" text-anchor="middle">8.5%</text><rect x="372" y="181.8" width="78" height="60.199999999999996" rx="6" class="wacc-bar wacc-mid"/>
+        <text x="411" y="173.8" class="bar-val" text-anchor="middle">$301</text>
+        <text x="411" y="266" class="xlab" text-anchor="middle">9.0%</text><rect x="476" y="186.6" width="78" height="55.400000000000006" rx="6" class="wacc-bar wacc-mid"/>
+        <text x="515" y="178.6" class="bar-val" text-anchor="middle">$277</text>
+        <text x="515" y="266" class="xlab" text-anchor="middle">9.5%</text><rect x="580" y="190.6" width="78" height="51.4" rx="6" class="wacc-bar wacc-base"/>
+        <text x="619" y="182.6" class="bar-val" text-anchor="middle">$257</text>
+        <text x="619" y="266" class="xlab" text-anchor="middle">10.0%</text><rect x="684" y="194" width="78" height="48" rx="6" class="wacc-bar wacc-base"/>
+        <text x="723" y="186" class="bar-val" text-anchor="middle">$240</text>
+        <text x="723" y="266" class="xlab" text-anchor="middle">10.5%</text><rect x="788" y="197.2" width="78" height="44.800000000000004" rx="6" class="wacc-bar wacc-base"/>
+        <text x="827" y="189.2" class="bar-val" text-anchor="middle">$224</text>
+        <text x="827" y="266" class="xlab" text-anchor="middle">11.0%</text><rect x="892" y="200" width="78" height="42" rx="6" class="wacc-bar wacc-hi"/>
+        <text x="931" y="192" class="bar-val" text-anchor="middle">$210</text>
+        <text x="931" y="266" class="xlab" text-anchor="middle">11.5%</text><rect x="996" y="202.4" width="78" height="39.6" rx="6" class="wacc-bar wacc-hi"/>
+        <text x="1035" y="194.4" class="bar-val" text-anchor="middle">$198</text>
+        <text x="1035" y="266" class="xlab" text-anchor="middle">12.0%</text>
+    <text x="567" y="286" class="xlab axis-title" text-anchor="middle">WACC →</text>
+  </svg>
+      <table class="ws-table">
+        <thead><tr><th>WACC</th><th>7.5%</th><th>8.0%</th><th>8.5%</th><th>9.0%</th><th>9.5%</th><th>10.0%</th><th>10.5%</th><th>11.0%</th><th>11.5%</th><th>12.0%</th></tr></thead>
+        <tbody><tr><td>Implied value / share</td><td>$399</td><td>$360</td><td>$328</td><td>$301</td><td>$277</td><td>$257</td><td>$240</td><td>$224</td><td>$210</td><td>$198</td></tr></tbody>
+      </table>
+      <div class="source">Even the lowest reviewer-suggested WACC of 7.5% produces $399/share — still well below the current $909 market snapshot. The market price embeds assumptions beyond this conservative operating DCF.</div>
+    </div>
+
+    <div class="disclaimer-banner">
+      <span><span class="dis-tag">DISCLAIMER</span> Not investment advice. Market data snapshot as of 2026-05-27.</span>
+      <span>Cat Financial caveat applies — see “Cat Financial Adjustment” section below.</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Verified Inputs <span class="chip">SEC FACTS</span></div>
+    <table>
+      <thead><tr><th>Metric</th><th>FY2025</th><th>Q1 2026</th><th>Source</th></tr></thead>
+      <tbody><tr><td>Sales and revenues</td><td>$67.589B</td><td>$17.415B</td><td>SEC XBRL</td></tr><tr><td>Operating income / EBIT</td><td>$11.151B</td><td>$3.085B</td><td>SEC XBRL</td></tr><tr><td>EBIT margin</td><td>16.5%</td><td>17.7%</td><td>10-K / Q1 release</td></tr><tr><td>Profit to common holders</td><td>$8.884B</td><td>$2.549B</td><td>SEC XBRL</td></tr><tr><td>D&A</td><td>$2.262B</td><td>$0.595B</td><td>SEC XBRL</td></tr><tr><td>Capex</td><td>$2.821B</td><td>$0.728B</td><td>SEC XBRL</td></tr><tr><td>Operating cash flow</td><td>$11.739B</td><td>$1.870B</td><td>SEC XBRL</td></tr><tr><td>Diluted EPS</td><td>$18.81</td><td>$5.47</td><td>SEC XBRL</td></tr><tr><td>Shares</td><td>472.3M diluted avg</td><td>460.6M out.</td><td>SEC XBRL</td></tr></tbody>
+    </table>
+    <div class="source">These exact inputs anchor the model before any forecast assumptions. FY2025 sales and revenues are $67.589B; Q1 2026 sales and revenues are $17.415B.</div>
+  </section>
+
+  <section>
+    <div class="section-title">Conservative Operating DCF Range — Summary <span class="chip">VALUATION SUMMARY</span></div>
+    <div class="cards">
+      <div class="card"><div class="label">Current share price</div><div class="val">$909</div><div class="sub">NYSE: CAT · May 2026</div></div>
+      <div class="card red"><div class="label">Bear implied value</div><div class="val redtxt">$136</div><div class="sub">-85.0% downside</div></div>
+      <div class="card blue"><div class="label">Base implied value</div><div class="val bluetxt">$225</div><div class="sub">-75.2% downside</div></div>
+      <div class="card green"><div class="label">Bull implied value</div><div class="val greentxt">$350</div><div class="sub">-61.5% downside</div></div>
+      <div class="card"><div class="label">Base enterprise value</div><div class="val">$113.5B</div><div class="sub">PV FCF + PV terminal</div></div>
+      <div class="card"><div class="label">Current market cap</div><div class="val">$423.3B</div><div class="sub">~3.7x base EV</div></div>
+      <div class="card"><div class="label">Base WACC</div><div class="val">11.0%</div><div class="sub">beta ~1.55-1.62</div></div>
+      <div class="card"><div class="label">Terminal value / EV</div><div class="val">68.4%</div><div class="sub">high terminal sensitivity</div></div>
+    </div>
+
+    <div class="analysis-box">
+      <h3>🧠 Analyst Read: Why is the valuation gap so wide?</h3>
+      <p>This DCF is not claiming CAT must fall to $225. It is saying that, using FY2025 actual cash flow, strong but non-permanent Q1 2026 growth, and a 10%-12% industrial discount rate, a conventional DCF struggles to support a $900+ share price.</p>
+      <p>The market is paying for a structural re-rating story: sustained Power & Energy / data-center demand, a larger services mix, EBIT margin holding above 20%, and buybacks that still create value at elevated prices. Those assumptions may prove right, but they should not be smuggled into the base case.</p>
+      <p>The key monitor is not just next quarter EPS. It is FY2026-FY2028 orders, Power & Energy backlog, margin durability, and whether Cat Financial credit quality remains clean.</p>
+      <div class="mini-grid">
+        <div class="mini purple"><h4>Core Question</h4><p>The current price capitalizes both high growth and high margins. The DCF shows that a return to a normal industrial cycle would quickly erode the margin of safety.</p></div>
+        <div class="mini gold"><h4>Biggest Uncertainty</h4><p>Is Q1 +22% just a strong cyclical rebound, or a multi-year demand curve shift driven by AI, power, and data-center buildout?</p></div>
+        <div class="mini blue"><h4>Market vs Model</h4><p>The current market cap of roughly $423B is far above the base DCF equity value of $103B. The market is buying a re-rating.</p></div>
+        <div class="mini green"><h4>Structural Strength</h4><p>Brand, dealer network, parts, and services revenue make CAT more resilient than a generic industrial manufacturer.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Key Metric Trends <span class="chip">CHARTS</span></div>
+    <div class="charts">
+      <div class="chart-card"><div class="chart-title">Revenue Forecast (USD B)</div><svg class="chart-svg" viewBox="0 0 643 238" role="img">
+    <line x1="22" x2="621" y1="206" y2="206" class="grid-line"/><text x="0" y="210" class="axis">0</text><line x1="22" x2="621" y1="163.5" y2="163.5" class="grid-line"/><text x="0" y="167.5" class="axis">23</text><line x1="22" x2="621" y1="121" y2="121" class="grid-line"/><text x="0" y="125" class="axis">45</text><line x1="22" x2="621" y1="78.5" y2="78.5" class="grid-line"/><text x="0" y="82.5" class="axis">68</text><line x1="22" x2="621" y1="36" y2="36" class="grid-line"/><text x="0" y="40" class="axis">90</text>
+    <rect x="28" y="78.31111111111112" width="74" height="127.68888888888888" rx="7" class="bar hist"/><text x="65" y="229" class="xlab" text-anchor="middle">FY2025A</text><rect x="133" y="68.11111111111111" width="74" height="137.88888888888889" rx="7" class="bar base"/><text x="170" y="229" class="xlab" text-anchor="middle">FY2026E</text><rect x="238" y="61.122222222222234" width="74" height="144.87777777777777" rx="7" class="bar base"/><text x="275" y="229" class="xlab" text-anchor="middle">FY2027E</text><rect x="343" y="55.45555555555555" width="74" height="150.54444444444445" rx="7" class="bar base"/><text x="380" y="229" class="xlab" text-anchor="middle">FY2028E</text><rect x="448" y="50.166666666666686" width="74" height="155.83333333333331" rx="7" class="bar base"/><text x="485" y="229" class="xlab" text-anchor="middle">FY2029E</text><rect x="553" y="45.44444444444446" width="74" height="160.55555555555554" rx="7" class="bar base"/><text x="590" y="229" class="xlab" text-anchor="middle">FY2030E</text>
+  </svg></div>
+      <div class="chart-card"><div class="chart-title">EBIT Margin Scenario Path</div><div class="legend"><span class="r">Bear</span><span class="b">Base</span><span class="g">Bull</span></div><svg class="chart-svg" viewBox="0 0 546 238" role="img">
+    <line x1="34" x2="518" y1="206" y2="206" class="grid-line"/><text x="4" y="210" class="axis">14%</text><line x1="34" x2="518" y1="163.5" y2="163.5" class="grid-line"/><text x="4" y="167.5" class="axis">16%</text><line x1="34" x2="518" y1="121" y2="121" class="grid-line"/><text x="4" y="125" class="axis">18%</text><line x1="34" x2="518" y1="78.5" y2="78.5" class="grid-line"/><text x="4" y="82.5" class="axis">20%</text><line x1="34" x2="518" y1="36" y2="36" class="grid-line"/><text x="4" y="40" class="axis">22%</text>
+    <text x="44" y="229" class="xlab" text-anchor="middle">2025A</text><text x="139.2" y="229" class="xlab" text-anchor="middle">2026E</text><text x="234.4" y="229" class="xlab" text-anchor="middle">2027E</text><text x="329.6" y="229" class="xlab" text-anchor="middle">2028E</text><text x="424.8" y="229" class="xlab" text-anchor="middle">2029E</text><text x="520" y="229" class="xlab" text-anchor="middle">2030E</text>
+    <path d="M44,152.875 L139.2,174.125 L234.4,174.125 L329.6,163.5 L424.8,163.5 L520,163.5" class="line bear-stroke"/><path d="M44,152.875 L139.2,142.25 L234.4,131.625 L329.6,125.24999999999999 L424.8,121 L520,121" class="line base-stroke"/><path d="M44,152.875 L139.2,121 L234.4,99.75 L329.6,89.125 L424.8,78.5 L520,78.5" class="line bull-stroke"/>
+    <circle cx="44" cy="152.875" r="4" class="bear-dot"/><circle cx="139.2" cy="174.125" r="4" class="bear-dot"/><circle cx="234.4" cy="174.125" r="4" class="bear-dot"/><circle cx="329.6" cy="163.5" r="4" class="bear-dot"/><circle cx="424.8" cy="163.5" r="4" class="bear-dot"/><circle cx="520" cy="163.5" r="4" class="bear-dot"/><circle cx="44" cy="152.875" r="4" class="base-dot"/><circle cx="139.2" cy="142.25" r="4" class="base-dot"/><circle cx="234.4" cy="131.625" r="4" class="base-dot"/><circle cx="329.6" cy="125.24999999999999" r="4" class="base-dot"/><circle cx="424.8" cy="121" r="4" class="base-dot"/><circle cx="520" cy="121" r="4" class="base-dot"/><circle cx="44" cy="152.875" r="4" class="bull-dot"/><circle cx="139.2" cy="121" r="4" class="bull-dot"/><circle cx="234.4" cy="99.75" r="4" class="bull-dot"/><circle cx="329.6" cy="89.125" r="4" class="bull-dot"/><circle cx="424.8" cy="78.5" r="4" class="bull-dot"/><circle cx="520" cy="78.5" r="4" class="bull-dot"/>
+  </svg></div>
+      <div class="chart-card"><div class="chart-title">Free Cash Flow Forecast (USD B) · Three Cases</div><div class="legend"><span class="r">Bear</span><span class="b">Base</span><span class="g">Bull</span></div><svg class="chart-svg" viewBox="0 0 772 238" role="img">
+    <line x1="26" x2="754" y1="206" y2="206" class="grid-line"/><text x="0" y="210" class="axis">0</text><line x1="26" x2="754" y1="163.5" y2="163.5" class="grid-line"/><text x="0" y="167.5" class="axis">4</text><line x1="26" x2="754" y1="121" y2="121" class="grid-line"/><text x="0" y="125" class="axis">7</text><line x1="26" x2="754" y1="78.5" y2="78.5" class="grid-line"/><text x="0" y="82.5" class="axis">11</text><line x1="26" x2="754" y1="36" y2="36" class="grid-line"/><text x="0" y="40" class="axis">14</text>
+    <rect x="38" y="114.92857142857143" width="22" height="91.07142857142857" rx="4" class="bear"/><text x="69" y="229" class="xlab" text-anchor="middle">2026E</text><rect x="67" y="101.57142857142858" width="22" height="104.42857142857142" rx="4" class="base"/><text x="69" y="229" class="xlab" text-anchor="middle">2026E</text><rect x="96" y="93.07142857142856" width="22" height="112.92857142857144" rx="4" class="bull"/><text x="69" y="229" class="xlab" text-anchor="middle">2026E</text><rect x="190" y="112.49999999999999" width="22" height="93.50000000000001" rx="4" class="bear"/><text x="221" y="229" class="xlab" text-anchor="middle">2027E</text><rect x="219" y="91.85714285714285" width="22" height="114.14285714285715" rx="4" class="base"/><text x="221" y="229" class="xlab" text-anchor="middle">2027E</text><rect x="248" y="74.85714285714286" width="22" height="131.14285714285714" rx="4" class="bull"/><text x="221" y="229" class="xlab" text-anchor="middle">2027E</text><rect x="342" y="107.64285714285715" width="22" height="98.35714285714285" rx="4" class="bear"/><text x="373" y="229" class="xlab" text-anchor="middle">2028E</text><rect x="371" y="84.57142857142857" width="22" height="121.42857142857143" rx="4" class="base"/><text x="373" y="229" class="xlab" text-anchor="middle">2028E</text><rect x="400" y="61.5" width="22" height="144.5" rx="4" class="bull"/><text x="373" y="229" class="xlab" text-anchor="middle">2028E</text><rect x="494" y="105.21428571428571" width="22" height="100.78571428571429" rx="4" class="bear"/><text x="525" y="229" class="xlab" text-anchor="middle">2029E</text><rect x="523" y="78.5" width="22" height="127.5" rx="4" class="base"/><text x="525" y="229" class="xlab" text-anchor="middle">2029E</text><rect x="552" y="49.35714285714286" width="22" height="156.64285714285714" rx="4" class="bull"/><text x="525" y="229" class="xlab" text-anchor="middle">2029E</text><rect x="646" y="102.78571428571429" width="22" height="103.21428571428571" rx="4" class="bear"/><text x="677" y="229" class="xlab" text-anchor="middle">2030E</text><rect x="675" y="74.85714285714286" width="22" height="131.14285714285714" rx="4" class="base"/><text x="677" y="229" class="xlab" text-anchor="middle">2030E</text><rect x="704" y="43.28571428571428" width="22" height="162.71428571428572" rx="4" class="bull"/><text x="677" y="229" class="xlab" text-anchor="middle">2030E</text>
+  </svg></div>
+      <div class="chart-card"><div class="chart-title">Conservative Operating DCF Range — Football Field (USD / Share)</div><div class="football">
+    <div class="ff-row"><span>Bear</span><div class="ff-track"><div class="ff-bar bear" style="width:14.315789473684209%"></div></div><b>$136</b></div><div class="ff-row"><span>Base</span><div class="ff-track"><div class="ff-bar base" style="width:23.684210526315788%"></div></div><b>$225</b></div><div class="ff-row"><span>Bull</span><div class="ff-track"><div class="ff-bar bull" style="width:36.84210526315789%"></div></div><b>$350</b></div><div class="ff-row"><span>Current</span><div class="ff-track"><div class="ff-bar current" style="width:95.6842105263158%"></div></div><b>$909</b></div>
+    <div class="ff-axis"><span>$0</span><span>$250</span><span>$500</span><span>$750</span><span>$950</span></div>
+  </div></div>
+    </div>
+    <div class="read-box">
+      <h3>📊 Chart Read: The three key observation lines</h3>
+      <p>① Revenue path: the base case fades Q1 2026 strength and assumes 2026E growth of +8%, then normalizes to 3%-5%. To justify $900+, revenue or margin needs to stay well above this path.</p>
+      <p>② EBIT margin: the base case moves from FY2025's 16.5% to 18.0%. The bull case reaches 20.0%. If CAT can hold 20%+ through the cycle, the DCF has room to move higher.</p>
+      <p>③ Football field: even the bull case is only $350/share, far from the current price. This is not a rounding error; it is a valuation-framework gap.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Sensitivity Analysis <span class="chip">WACC × TERMINAL GROWTH</span></div>
+    <table class="heat">
+      <thead><tr><th>WACC \ g</th><th>1.5%</th><th>2.0%</th><th>2.5%</th><th>3.0%</th><th>3.5%</th></tr></thead>
+      <tbody><tr><td>10.0%</td><td class="mid">$232</td><td class="mid">$244</td><td class="mid">$257</td><td class="hot">$273</td><td class="hot">$290</td></tr><tr><td>10.5%</td><td class="cool">$218</td><td class="cool">$228</td><td class="mid">$240</td><td class="mid">$253</td><td class="hot">$268</td></tr><tr><td>11.0%</td><td class="cool">$205</td><td class="cool">$214</td><td class="cool">$224</td><td class="mid">$235</td><td class="mid">$248</td></tr><tr><td>11.5%</td><td class="cold">$193</td><td class="cold">$201</td><td class="cool">$210</td><td class="cool">$220</td><td class="mid">$231</td></tr><tr><td>12.0%</td><td class="cold">$183</td><td class="cold">$190</td><td class="cold">$198</td><td class="cool">$206</td><td class="cool">$216</td></tr></tbody>
+    </table>
+    <div class="source">How to read this: the table holds base-case FCF constant and flexes only WACC and terminal growth. Even at 10.0% WACC and 3.5% terminal growth, the model reaches only about $290/share, still far below the current price.</div>
+  </section>
+
+  <section>
+    <div class="section-title">Comparable Companies <span class="chip">COMPARABLE COMPANIES</span></div>
+    <table>
+      <thead><tr><th>Company</th><th>Ticker</th><th>Price</th><th>Market Cap</th><th>P/E</th><th>EPS</th><th>Notes</th></tr></thead>
+      <tbody><tr class="highlight"><td>★ Caterpillar</td><td>CAT</td><td>$908.89</td><td>$423.4B</td><td>45.3x</td><td>$20.08</td><td>DCF base $225; current implies large growth premium</td></tr><tr class=""><td>Deere</td><td>DE</td><td>$527.38</td><td>$142.9B</td><td>29.7x</td><td>$17.73</td><td>Agriculture / construction equipment peer</td></tr><tr class=""><td>Cummins</td><td>CMI</td><td>$668.51</td><td>$92.8B</td><td>34.7x</td><td>$19.25</td><td>Powertrain / power systems peer</td></tr><tr class=""><td>Paccar</td><td>PCAR</td><td>$112.67</td><td>$59.4B</td><td>24.0x</td><td>$4.70</td><td>Truck OEM / industrial cycle proxy</td></tr><tr class=""><td>CNH Industrial</td><td>CNH</td><td>$10.45</td><td>$13.0B</td><td>32.7x</td><td>$0.32</td><td>Agriculture / construction equipment peer</td></tr></tbody>
+    </table>
+    <div class="source">Market snapshot: around 2026-05-27 18:16 UTC. Trading prices, P/E, and EPS update by vendor; the DCF model itself uses SEC and official Caterpillar financial data.</div>
+  </section>
+
+  <section>
+    <div class="section-title">Cat Financial Adjustment <span class="chip">IMPORTANT CAVEAT</span></div>
+    <div class="analysis-box">
+      <p>CAT is not a pure manufacturer. Financial Products / Cat Financial debt is matched against customer and dealer financing receivables. If we simply subtract all consolidated debt from EV, we ignore the financing arm's asset side and understate the value of the operating company.</p>
+      <p>This model uses an operating-company net debt adjustment: Bear $15B, Base $10B, Bull $5B. This is a valuation judgment, not a raw SEC line item. A more rigorous next step would be SOTP: Machinery, Power & Energy operating DCF plus Cat Financial book/equity value.</p>
+    </div>
+  </section>
+
+  <footer>
+    <strong>Not investment advice. Market data snapshot as of 2026-05-27.</strong><br/>
+    External model QA: facts and DCF math cross-checked by Qwen and DeepSeek (see CAT_DCF_EXTERNAL_AUDIT_CONSENSUS.md). Output is positioned as a conservative operating-company DCF, not a sum-of-the-parts valuation. Cat Financial caveat applies.<br/>
+    Sources: Caterpillar FY2025 Form 10-K, Q1 2026 Form 10-Q, Caterpillar official Q1 2026 press release, SEC companyfacts API, and current market snapshots.
+  </footer>
+</div>
+</body>
+</html>
