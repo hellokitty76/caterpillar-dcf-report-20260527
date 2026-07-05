@@ -1,0 +1,208 @@
+{
+  "symbol": "SPX",
+  "per_timeframe": {
+    "1": {
+      "oos": {
+        "days": 0,
+        "trades": 0,
+        "trades_per_day": 0,
+        "net_total": 0,
+        "net_per_day": 0.0,
+        "avg_net_per_trade": 0.0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "max_drawdown": 0.0
+      },
+      "folds": []
+    },
+    "2": {
+      "oos": {
+        "days": 1,
+        "trades": 5,
+        "trades_per_day": 5.0,
+        "net_total": -59.26,
+        "net_per_day": -59.26,
+        "avg_net_per_trade": -11.85,
+        "win_rate": 0.4,
+        "profit_factor": 0.84,
+        "max_drawdown": -204.3
+      },
+      "folds": [
+        {
+          "train_days": 5,
+          "test_dates": [
+            "2026-07-02"
+          ],
+          "params": {
+            "timeframe_min": 2,
+            "breakout_lookback": 8,
+            "ema_fast": 5,
+            "ema_slow": 20,
+            "mom_thresh_atr": 0.0,
+            "trail_atr": 2.5,
+            "stop_atr": 1.25
+          },
+          "test": {
+            "days": 1,
+            "trades": 5,
+            "trades_per_day": 5.0,
+            "net_total": -59.26,
+            "net_per_day": -59.26,
+            "avg_net_per_trade": -11.85,
+            "win_rate": 0.4,
+            "profit_factor": 0.84,
+            "max_drawdown": -204.3
+          }
+        }
+      ]
+    },
+    "3": {
+      "oos": {
+        "days": 0,
+        "trades": 0,
+        "trades_per_day": 0,
+        "net_total": 0,
+        "net_per_day": 0.0,
+        "avg_net_per_trade": 0.0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "max_drawdown": 0.0
+      },
+      "folds": []
+    },
+    "5": {
+      "oos": {
+        "days": 7,
+        "trades": 15,
+        "trades_per_day": 2.14,
+        "net_total": -894.77,
+        "net_per_day": -127.82,
+        "avg_net_per_trade": -59.65,
+        "win_rate": 0.133,
+        "profit_factor": 0.09,
+        "max_drawdown": -908.63
+      },
+      "folds": [
+        {
+          "train_days": 6,
+          "test_dates": [
+            "2026-06-24",
+            "2026-06-25"
+          ],
+          "params": {
+            "timeframe_min": 5,
+            "breakout_lookback": 20,
+            "ema_fast": 9,
+            "ema_slow": 34,
+            "mom_thresh_atr": 0.0,
+            "trail_atr": 1.0,
+            "stop_atr": 0.75
+          },
+          "test": {
+            "days": 2,
+            "trades": 3,
+            "trades_per_day": 1.5,
+            "net_total": -128.11,
+            "net_per_day": -64.05,
+            "avg_net_per_trade": -42.7,
+            "win_rate": 0.333,
+            "profit_factor": 0.41,
+            "max_drawdown": -141.97
+          }
+        },
+        {
+          "train_days": 8,
+          "test_dates": [
+            "2026-06-26",
+            "2026-06-29"
+          ],
+          "params": {
+            "timeframe_min": 5,
+            "breakout_lookback": 20,
+            "ema_fast": 9,
+            "ema_slow": 34,
+            "mom_thresh_atr": 0.0,
+            "trail_atr": 1.5,
+            "stop_atr": 0.75
+          },
+          "test": {
+            "days": 2,
+            "trades": 4,
+            "trades_per_day": 2.0,
+            "net_total": -294.13,
+            "net_per_day": -147.07,
+            "avg_net_per_trade": -73.53,
+            "win_rate": 0.25,
+            "profit_factor": 0.01,
+            "max_drawdown": -296.82
+          }
+        },
+        {
+          "train_days": 10,
+          "test_dates": [
+            "2026-06-30",
+            "2026-07-01"
+          ],
+          "params": {
+            "timeframe_min": 5,
+            "breakout_lookback": 20,
+            "ema_fast": 9,
+            "ema_slow": 34,
+            "mom_thresh_atr": 0.0,
+            "trail_atr": 1.0,
+            "stop_atr": 1.25
+          },
+          "test": {
+            "days": 2,
+            "trades": 5,
+            "trades_per_day": 2.5,
+            "net_total": -279.8,
+            "net_per_day": -139.9,
+            "avg_net_per_trade": -55.96,
+            "win_rate": 0.0,
+            "profit_factor": 0.0,
+            "max_drawdown": -279.8
+          }
+        },
+        {
+          "train_days": 12,
+          "test_dates": [
+            "2026-07-02"
+          ],
+          "params": {
+            "timeframe_min": 5,
+            "breakout_lookback": 20,
+            "ema_fast": 9,
+            "ema_slow": 34,
+            "mom_thresh_atr": 0.0,
+            "trail_atr": 1.0,
+            "stop_atr": 1.25
+          },
+          "test": {
+            "days": 1,
+            "trades": 3,
+            "trades_per_day": 3.0,
+            "net_total": -192.74,
+            "net_per_day": -192.74,
+            "avg_net_per_trade": -64.25,
+            "win_rate": 0.0,
+            "profit_factor": 0.0,
+            "max_drawdown": -192.74
+          }
+        }
+      ]
+    }
+  },
+  "chosen_timeframe": 2,
+  "sizing": {
+    "feasible": false,
+    "contracts": 0,
+    "target_daily": 500.0,
+    "oos_net_per_day_1lot": -59.26,
+    "expected_net_per_day": 0.0,
+    "worst_day_loss_1lot": 59.26,
+    "risk_budget_daily": 1000.0,
+    "binding_constraint": "edge",
+    "notes": "Out-of-sample edge is <= 0. Do not size up; the strategy is not validated to make money on unseen data with these costs."
+  }
+}
