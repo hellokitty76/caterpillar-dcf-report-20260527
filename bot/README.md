@@ -62,11 +62,19 @@ dry_run(spy_run(), "bot/data/spy_5min.csv")   # 用 ReplayFeed + PaperBroker 重
 ## 更新 / 更換資料
 
 ```bash
-# 1) 用 IBKR get_price_history 取回 JSON(step=FIVE_MINS, step_count=1000, outside_rth=false)
-# 2) 轉成 CSV:
+# A) 從 IBKR JSON 轉檔(step=FIVE_MINS, step_count=1000, outside_rth=false):
 python scripts/fetch_data.py raw_5min.json bot/data/spy_5min.csv
+
+# B) 匯入你自己的 2024/2025(或任何非 2026)日內 CSV —— 自動辨識欄位/時間格式,
+#    預設剔除 2026 列,並印出年度覆蓋報告:
+python scripts/ingest_csv.py my_spy_2024_2025.csv bot/data/spy_train_5min.csv
+python scripts/ingest_csv.py my_spy_2024_2025.csv --preview      # 只檢視不寫檔
+python scripts/ingest_csv.py IN.csv OUT.csv --assume-tz UTC      # 若檔案是 UTC-naive
 ```
-或直接放入任何來源產生的六欄 CSV。**要滿足「非 2026」的訓練資料需求,就是在這一步換來源。**
+
+`ingest_csv.py` 背後的 `bot.data.read_bars_csv` 能吃常見格式:欄名大小寫/同義字
+(`open/o`, `close/c/last`, `volume/v/vol`…)、單一 ISO 或 epoch 時間欄、或 `Date`+`Time`
+兩欄拆分;naive 時間預設當作 US/Eastern。**要滿足「非 2026」的訓練資料需求,就是在這一步換來源。**
 
 ## 現況誠實結論
 

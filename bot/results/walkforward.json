@@ -1,5 +1,5 @@
 {
-  "symbol": "SPX",
+  "symbol": "SPY",
   "per_timeframe": {
     "1": {
       "oos": {
@@ -20,12 +20,12 @@
         "days": 1,
         "trades": 5,
         "trades_per_day": 5.0,
-        "net_total": -59.26,
-        "net_per_day": -59.26,
-        "avg_net_per_trade": -11.85,
+        "net_total": 206.64,
+        "net_per_day": 206.64,
+        "avg_net_per_trade": 41.33,
         "win_rate": 0.4,
-        "profit_factor": 0.84,
-        "max_drawdown": -204.3
+        "profit_factor": 1.94,
+        "max_drawdown": -115.21
       },
       "folds": [
         {
@@ -46,12 +46,12 @@
             "days": 1,
             "trades": 5,
             "trades_per_day": 5.0,
-            "net_total": -59.26,
-            "net_per_day": -59.26,
-            "avg_net_per_trade": -11.85,
+            "net_total": 206.64,
+            "net_per_day": 206.64,
+            "avg_net_per_trade": 41.33,
             "win_rate": 0.4,
-            "profit_factor": 0.84,
-            "max_drawdown": -204.3
+            "profit_factor": 1.94,
+            "max_drawdown": -115.21
           }
         }
       ]
@@ -75,12 +75,12 @@
         "days": 7,
         "trades": 15,
         "trades_per_day": 2.14,
-        "net_total": -894.77,
-        "net_per_day": -127.82,
-        "avg_net_per_trade": -59.65,
-        "win_rate": 0.133,
-        "profit_factor": 0.09,
-        "max_drawdown": -908.63
+        "net_total": -72.36,
+        "net_per_day": -10.34,
+        "avg_net_per_trade": -4.82,
+        "win_rate": 0.333,
+        "profit_factor": 0.8,
+        "max_drawdown": -219.1
       },
       "folds": [
         {
@@ -102,12 +102,12 @@
             "days": 2,
             "trades": 3,
             "trades_per_day": 1.5,
-            "net_total": -128.11,
-            "net_per_day": -64.05,
-            "avg_net_per_trade": -42.7,
+            "net_total": 38.99,
+            "net_per_day": 19.5,
+            "avg_net_per_trade": 13.0,
             "win_rate": 0.333,
-            "profit_factor": 0.41,
-            "max_drawdown": -141.97
+            "profit_factor": 1.37,
+            "max_drawdown": -86.27
           }
         },
         {
@@ -119,22 +119,22 @@
           "params": {
             "timeframe_min": 5,
             "breakout_lookback": 20,
-            "ema_fast": 9,
-            "ema_slow": 34,
+            "ema_fast": 5,
+            "ema_slow": 20,
             "mom_thresh_atr": 0.0,
-            "trail_atr": 1.5,
+            "trail_atr": 1.0,
             "stop_atr": 0.75
           },
           "test": {
             "days": 2,
             "trades": 4,
             "trades_per_day": 2.0,
-            "net_total": -294.13,
-            "net_per_day": -147.07,
-            "avg_net_per_trade": -73.53,
+            "net_total": -28.1,
+            "net_per_day": -14.05,
+            "avg_net_per_trade": -7.02,
             "win_rate": 0.25,
-            "profit_factor": 0.01,
-            "max_drawdown": -296.82
+            "profit_factor": 0.68,
+            "max_drawdown": -86.49
           }
         },
         {
@@ -146,22 +146,22 @@
           "params": {
             "timeframe_min": 5,
             "breakout_lookback": 20,
-            "ema_fast": 9,
-            "ema_slow": 34,
+            "ema_fast": 5,
+            "ema_slow": 20,
             "mom_thresh_atr": 0.0,
-            "trail_atr": 1.0,
-            "stop_atr": 1.25
+            "trail_atr": 1.5,
+            "stop_atr": 0.75
           },
           "test": {
             "days": 2,
             "trades": 5,
             "trades_per_day": 2.5,
-            "net_total": -279.8,
-            "net_per_day": -139.9,
-            "avg_net_per_trade": -55.96,
-            "win_rate": 0.0,
-            "profit_factor": 0.0,
-            "max_drawdown": -279.8
+            "net_total": -57.62,
+            "net_per_day": -28.81,
+            "avg_net_per_trade": -11.52,
+            "win_rate": 0.4,
+            "profit_factor": 0.5,
+            "max_drawdown": -115.4
           }
         },
         {
@@ -182,12 +182,12 @@
             "days": 1,
             "trades": 3,
             "trades_per_day": 3.0,
-            "net_total": -192.74,
-            "net_per_day": -192.74,
-            "avg_net_per_trade": -64.25,
-            "win_rate": 0.0,
-            "profit_factor": 0.0,
-            "max_drawdown": -192.74
+            "net_total": -25.64,
+            "net_per_day": -25.64,
+            "avg_net_per_trade": -8.55,
+            "win_rate": 0.333,
+            "profit_factor": 0.46,
+            "max_drawdown": -47.11
           }
         }
       ]
@@ -195,14 +195,14 @@
   },
   "chosen_timeframe": 2,
   "sizing": {
-    "feasible": false,
-    "contracts": 0,
+    "feasible": true,
+    "contracts": 3,
     "target_daily": 500.0,
-    "oos_net_per_day_1lot": -59.26,
-    "expected_net_per_day": 0.0,
-    "worst_day_loss_1lot": 59.26,
+    "oos_net_per_day_1lot": 206.64,
+    "expected_net_per_day": 619.92,
+    "worst_day_loss_1lot": 0.0,
     "risk_budget_daily": 1000.0,
-    "binding_constraint": "edge",
-    "notes": "Out-of-sample edge is <= 0. Do not size up; the strategy is not validated to make money on unseen data with these costs."
+    "binding_constraint": "target",
+    "notes": "To reach $500/day at the OOS edge of $206.64/contract/day you need 3 contracts; the risk budget allows 3. "
   }
 }

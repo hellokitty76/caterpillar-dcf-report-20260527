@@ -62,11 +62,99 @@ def _annualized_realized_vol(close: np.ndarray, timeframe_min: int) -> float:
     return float(np.std(rets, ddof=1) * np.sqrt(periods_per_year))
 
 
-def _load_frame(csv_path: str) -> pd.DataFrame:
+# Column-name synonyms seen in real intraday CSV exports.
+_COL_SYNONYMS = {
+    "open": ["open", "o", "openprice"],
+    "high": ["high", "h"],
+    "low": ["low", "l"],
+    "close": ["close", "c", "closeprice", "last"],
+    "volume": ["volume", "v", "vol"],
+}
+# Unambiguous FULL datetime columns (carry both date and time).
+_DT_FULL = ["timestamp", "datetime", "date_time", "date_time_utc"]
+# Bare time-of-day columns -- only meaningful alongside a date column.
+_TIME_OF_DAY = ["time", "timeofday", "clock"]
+_DATE_ONLY = ["date", "day"]
+# Last-resort single column (our own exports use "time" for a full ISO stamp).
+_DT_FALLBACK = ["time", "t", "dt"]
+
+
+def _pick(cols_lower: dict, names: list[str]) -> str | None:
+    for n in names:
+        if n in cols_lower:
+            return cols_lower[n]
+    return None
+
+
+def _parse_single(raw: pd.Series, assume_tz: str) -> pd.Series:
+    if pd.api.types.is_numeric_dtype(raw):
+        return pd.to_datetime(raw, utc=True)            # epoch -> UTC
+    return _localize(pd.to_datetime(raw, utc=False, format="mixed"), assume_tz)
+
+
+def _parse_datetime(df: pd.DataFrame, assume_tz: str) -> pd.Series:
+    """Build a tz-aware ET timestamp series from many possible layouts.
+
+    Precedence (so a bare "Time" column can't masquerade as a full stamp):
+      1. an explicit full datetime column (timestamp/datetime/...);
+      2. a date column, combined with a time-of-day column if present;
+      3. a fallback single column ("time"/"t"/"dt") holding a full ISO/epoch.
+    Naive timestamps are localized with `assume_tz`, then all convert to ET.
+    """
+    cols_lower = {c.lower(): c for c in df.columns}
+
+    full = _pick(cols_lower, _DT_FULL)
+    if full is not None:
+        ts = _parse_single(df[full], assume_tz)
+    else:
+        d = _pick(cols_lower, _DATE_ONLY)
+        if d is not None:
+            t = _pick(cols_lower, _TIME_OF_DAY)
+            combo = df[d].astype(str) + (" " + df[t].astype(str) if t else "")
+            ts = _localize(pd.to_datetime(combo, format="mixed"), assume_tz)
+        else:
+            single = _pick(cols_lower, _DT_FALLBACK)
+            if single is None:
+                raise ValueError(
+                    "no recognizable datetime column; expected a full "
+                    f"datetime {_DT_FULL + _DT_FALLBACK} or a date(+time) pair")
+            ts = _parse_single(df[single], assume_tz)
+    return ts.dt.tz_convert(_ET)
+
+
+def _localize(parsed: pd.Series, assume_tz: str) -> pd.Series:
+    if parsed.dt.tz is None:
+        return parsed.dt.tz_localize(assume_tz)
+    return parsed.dt.tz_convert("UTC")
+
+
+def read_bars_csv(csv_path: str, assume_tz: str = "America/New_York"
+                  ) -> pd.DataFrame:
+    """Flexible reader -> canonical OHLCV frame indexed by ET timestamp.
+
+    Accepts varied column names and datetime layouts so a 2024/2025 export
+    from another vendor loads without hand-editing.  Naive timestamps are
+    assumed to be in `assume_tz` (change it if your file is UTC-naive).
+    """
     df = pd.read_csv(csv_path)
-    ts = pd.to_datetime(df["time"], utc=True).dt.tz_convert(_ET)
-    df = df.assign(ts=ts).set_index("ts").sort_index()
-    return df[["open", "high", "low", "close", "volume"]]
+    cols_lower = {c.lower(): c for c in df.columns}
+    ts = _parse_datetime(df, assume_tz)
+    out = pd.DataFrame({"ts": ts})
+    for canon, syns in _COL_SYNONYMS.items():
+        src = _pick(cols_lower, syns)
+        if src is None:
+            if canon == "volume":
+                out[canon] = 0.0          # volume is optional for the strategy
+                continue
+            raise ValueError(f"missing '{canon}' column (looked for {syns})")
+        out[canon] = pd.to_numeric(df[src], errors="coerce")
+    out = out.dropna(subset=["open", "high", "low", "close"])
+    return out.set_index("ts").sort_index()[
+        ["open", "high", "low", "close", "volume"]]
+
+
+def _load_frame(csv_path: str) -> pd.DataFrame:
+    return read_bars_csv(csv_path)
 
 
 def _restrict_rth(df: pd.DataFrame, symbol: SymbolConfig) -> pd.DataFrame:
