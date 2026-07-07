@@ -41,41 +41,45 @@
 
 ## 5. Country & Investment Climate Overview — Senegal
 
-*[RESEARCH PENDING — from `../research/senegal_fdi_risk_compliance.md`]*
+*[RESEARCH COMPLETE — full detail in `../research/senegal_fdi_risk_compliance.md`]*
 
-- Political and macroeconomic snapshot
-- Sovereign credit trend, ease-of-doing-business / corruption index position
-- Currency regime: CFA franc (XOF), BCEAO/UEMOA peg to EUR — what this means for a China-denominated investment
-- China–Senegal relations, BRI context, precedent Chinese investments (proof points to cite in §1 and §9)
+- **Political:** electorally legitimate, constitutionally functioning democracy (still often called a West African "democratic beacon"), but as of mid-2026 in an acute, unresolved power struggle — President Faye dismissed PM Sonko in May 2026 over debt-crisis strategy; Sonko was then elected Speaker of the National Assembly (a constitutionally protected position) and PASTEF party leader, giving him an independent power base. **This is the single most time-sensitive fact in the whole research pass and must be flagged prominently, not buried in general background.**
+- **Sovereign credit:** one of the fastest rating deteriorations of any sovereign in this period — Moody's Ba3→Caa1 and S&P B+→CCC+ within ~14 months (2024-2025), driven by a debt-transparency scandal (real 2023 debt/GDP ~99.7% vs. ~74.4% officially reported) and a suspended IMF program.
+- **Governance quality (a countervailing signal):** CPI 2025 score 46/100 (~top half globally, above the SSA average); World Bank B-READY 2025 puts Senegal in Africa's top 10 for the first time; WJP Rule of Law Index 2025 lists Senegal among the top global improvers. Governance trend and macro/political trend are currently moving in *opposite* directions — preserve that nuance.
+- **Currency regime:** XOF pegged to EUR (655.957:1), backed by an unconditional French Treasury guarantee — peg/convertibility risk is low; the real risk is *administrative/liquidity friction* in actually moving profits out, given a 2025 BCEAO tightening of currency-surrender rules.
+- **China–Senegal relations:** upgraded to "Comprehensive Strategic Cooperative Partnership" (Sept 2024); a June 2025 Hangzhou forum produced MOUs explicitly covering housing; strongest proof points are the CNTIC/Huawei 2×50MW solar+storage deal (2025) and CGN Europe Energy's 90% stake in the Malicounda solar plant (cite in §9). No completed Chinese-built *housing* project in Senegal yet — frame this proposal as extending a trusted relationship into a new sector, not continuing a housing track record.
 
 ## 6. Legal & Regulatory Compliance Framework
 
-*[RESEARCH PENDING — from `../research/senegal_fdi_risk_compliance.md`]*
+*[RESEARCH COMPLETE — full detail in `../research/senegal_fdi_risk_compliance.md`]*
 
-- Investment Code provisions applicable to this project (any SEZ/incentive regime eligibility)
-- Foreign ownership rules for real estate; land tenure mechanics for the specific site (link to §3)
-- Corporate structuring options for the JV vehicle (Senegalese SARL/SA with foreign shareholders, offshore holding company, etc.) — [REQUIRED - client preference / legal counsel input]
-- Tax treatment: corporate tax, VAT, incentives for construction and renewable energy, any China-Senegal DTA
-- Repatriation of profits / capital controls under BCEAO rules
-- Dispute resolution: OHADA/CCJA arbitration, ICSID status
-- Construction permitting and environmental impact assessment (EIA) requirements and status for this project — [REQUIRED - current permit status]
+- **Investment Code:** new 2025 Code (Loi n°2025-16) — digitalized one-stop shop, VAT suspension + customs exemption during construction, 3-5 year fiscal stability guarantee. Whether 2004-code thresholds (CFA 100M/150 jobs) carry over is unconfirmed — verify with counsel.
+- **SEZ eligibility:** 4 zones exist (15% corporate tax in Zone A); whether residential real estate or standalone solar qualify as eligible activities is unconfirmed — but renewable-energy VAT exemption is available *outside* the SEZ regime too, so SEZ status may not be necessary for the PV component.
+- **Foreign ownership:** no blanket nationality bar on titled real estate — the real constraint is land *category*, not buyer nationality (see land tenure below).
+- **Land tenure — the actual risk driver:** confirm which of the three categories the site sits in: (1) *domaine national* (inalienable, highest risk), (2) *domaine de l'État* (enables a mortgageable, transferable ~30+20yr bail emphytéotique — the realistic path), or (3) *titre foncier* (full freehold, lowest risk once obtained, but still needs a title-history search given documented multiple-sale fraud). [REQUIRED - confirm the target site's current tenure category]
+- **Corporate vehicle:** [REQUIRED - client preference]; OHADA SA (min. capital CFA 10M, board required) is the more likely vehicle than SARL for a multi-investor project; full foreign ownership permitted, no local-partner requirement.
+- **Tax:** 30% corporate tax, 18% VAT, solar-equipment VAT exemption (2020 decree), China-Senegal DTA *signed* Oct 2023 but entry-into-force **unconfirmed** — do not represent it as currently operative to investors.
+- **Repatriation:** legally guaranteed in principle (2025 Investment Code) but procedural — FDI declaration + routing through an approved local bank + 2025 BCEAO currency-surrender rules. Frame as a manageable compliance process, not a legal restriction.
+- **Dispute resolution:** Senegal is OHADA/CCJA, ICSID, and New York Convention party with an active (if imperfect) enforcement track record. Recommended pattern: CCJA arbitration for ordinary JV disputes, ICC/Paris for higher-value finance disputes, ICSID/BIT reserved for sovereign-conduct claims *if* a treaty basis exists (China-Senegal BIT status is unconfirmed).
+- **Construction/EIA:** permis de construire via DGUA (digitalized TeleDAC platform, 28-40 day targets, ~3 months in practice); EIES via DEEC, recently possibly restructured by a 2023 Code de l'Environnement reform — confirm current thresholds. [REQUIRED - current permit status for this project]
 
 ## 7. Risk Assessment ("Potential Crisis" Analysis)
 
-*[RESEARCH PENDING — from `../research/senegal_fdi_risk_compliance.md`]*
+*[RESEARCH COMPLETE — full detail and citations in `../research/senegal_fdi_risk_compliance.md`]*
 
-Present as a table: **Risk | Likelihood | Severity | Mitigation**. Expected top risks to cover (confirm/adjust once research lands):
+| Risk | Likelihood | Severity | Mitigation |
+|---|---|---|---|
+| **Faye-Sonko institutional rupture (May-June 2026)** — live, unresolved power struggle with street-mobilization capacity on both sides | High (ongoing) | High | Monitor continuously through signing; build a political-risk contingency/timing clause into the deal structure; do not treat as background noise |
+| Sovereign debt/rating crisis (Caa1/CCC+, suspended IMF program) | High (ongoing) | Medium-High | Structure financing to avoid direct sovereign-credit exposure; price political-risk insurance into returns |
+| Land title / customary tenure disputes (domaine national fraud, multiple sales) | Medium-High (site-dependent) | High | Full état hypothécaire title-history search via notary; prefer bail emphytéotique → titre foncier conversion path over raw domaine national occupancy |
+| Currency convertibility / repatriation friction (2025 BCEAO tightening) | Medium | Medium | Route all flows through an approved local bank from day one; retain UEMOA-qualified counsel; consider EUR-denominated financing tranches |
+| CFA-exit / currency-reform political risk | Low-Medium (medium-term) | Medium | Disclose candidly; note Senegal's 2025 XOF bond-market behavior as a countervailing signal against near-term rupture |
+| Regulatory/permitting delay | Medium | Medium | Budget 3 months (not the optimistic 28-40 day target) for permitting in the construction timeline |
+| Investor-state arbitration exposure (Senegal is an active ICSID respondent, incl. a pending 2025 energy-sector case) | Low-Medium | Medium | Confirm China-Senegal BIT status before assuming treaty protection; structure via a jurisdiction with confirmed Senegal BIT coverage if treaty protection is a priority |
+| Expropriation risk | Low | High | MIGA/Sinosure political risk insurance; Investment Code's own expropriation guarantees |
+| FX/PPA mismatch risk on the solar component | Medium (scenario-dependent) | Medium | Structure PV offtake in EUR/EUR-indexed rather than USD (see §9) |
 
-1. Land title / customary tenure disputes
-2. Currency convertibility / repatriation risk (XOF peg dynamics)
-3. Political risk / policy change risk
-4. Regulatory/permitting delay
-5. Local partner / contractor reliability
-6. Expropriation risk (and available insurance: MIGA, Sinosure)
-7. Contract enforcement track record
-8. FX/PPA mismatch risk on the solar component (see §9)
-
-This section is the credibility anchor for a "全方位分析" (comprehensive analysis) — do not soften findings; name each risk plainly and pair it with a concrete mitigation the JV will adopt.
+This section is the credibility anchor for a "全方位分析" (comprehensive analysis) — findings are stated plainly per the research, not softened, with each risk paired to a concrete mitigation the JV would adopt.
 
 ## 8. Financial Structure
 
@@ -87,14 +91,24 @@ This section is the credibility anchor for a "全方位分析" (comprehensive an
 
 ## 9. Renewable Energy (Solar PV) Component — Multiple Scenarios
 
-*[RESEARCH PENDING — from `../research/senegal_solar_pv_options.md`]*
+*[RESEARCH COMPLETE — full detail, citations, and cost sourcing in `../research/senegal_solar_pv_options.md`]*
 
-Present as a comparison table across scenarios (rooftop distributed / centralized solar farm+microgrid / hybrid+storage / EPC+PPA-BOOT), covering: capex/kW, ownership & role split between Chinese EPC partner and the JV, key risk, best-fit rationale. State clearly which scenario(s) the sponsor recommends and why, while leaving the others as investor-facing options (per client instruction: present multiple options, not a single locked-in design).
+**Regulatory sweet spot (Decree 2023-286):** solar PV **≤1MW per installation** qualifies for a light "declaration" regime (no license); anything larger, or any installation selling surplus to SENELEC, needs a full 25-year CRSE license. This single fact should shape which scenario is pitched as "fastest to permit" vs. "best economics at scale."
 
-- Regulatory basis (SENELEC/ANER rules, net metering/IPP licensing)
-- Precedent Chinese-built solar projects in Senegal/West Africa (credibility proof points)
-- Financing/de-risking tools available to the Chinese partner (Sinosure, China Eximbank, blended finance)
-- How the PV component's returns/costs feed back into §8's financial structure
+| Scenario | Est. CAPEX/kW | Ownership / role split | Key risk | Best fit |
+|---|---|---|---|---|
+| (a) Rooftop distributed per building | ~$1,000-1,400/kW (estimate) | Homeowners/HOA own; Chinese partner supplies+installs only | No Senegal statute on shared/condo rooftop-PV rights (legal gap); fragmented dust-cleaning logistics | Villas/low-rise, owner bill-savings pitch |
+| (b) Centralized solar farm + private microgrid | ~$1,000-1,300/kW | Development/SPV owns; Chinese partner as EPC + possible minority equity (mirrors CGN's Malicounda stake) | Almost certainly triggers the 25yr CRSE license; land competes with saleable area | Master-planned sites with dedicated utility land |
+| (c) Hybrid PV + battery storage (± genset) | PV above + battery ~$250-450/kWh (estimate) | Development/SPV owns; Chinese partner supplies integrated PV+BESS package | Battery capex/payback; ~10-15yr replacement cycle | **Best matched to Senegal's actual grid-reliability profile — recommended default** for a reliability-marketed product |
+| (d) PV + Chinese EPC/PPA or BOOT/BOO | Same hardware cost, borne by Chinese EPC/investor, recovered via 15-25yr PPA | Chinese partner designs/finances/builds/owns/operates; development pays per-kWh, no upfront capex | Development is a thin credit counterparty vs. SENELEC; USD/EUR-vs-XOF currency mismatch | Best if Chinese side wants a long-term revenue stream and the development can offer credit enhancement |
+
+**Credibility anchor:** CGN Europe Energy (China General Nuclear Power Corp's European renewables arm) owns 90% of the operating 22MW Malicounda solar plant in Senegal — the strongest direct Chinese-Senegal solar precedent, lead with it. No large Chinese-financed *utility-scale* Senegalese solar EPC project was found beyond this equity stake — frame this project as extending that relationship into a new (EPC/BOOT) role, not continuing an existing EPC track record.
+
+**Financing/de-risking tools:** Sinosure (green-development export credit insurance), China Eximbank (concessional Senegal precedent: Gouina hydro at 20yr/9yr-grace/2% interest), IFC/MIGA blended finance (Kael+Kahone precedent: MIGA political-risk cover of €6.9M for 15 years), AfDB "Desert to Power" G5 Sahel facility ($379.6M AfDB + $150M Green Climate Fund, Senegal is one of only 3 "notionally stable" target countries).
+
+**Currency structuring:** since XOF is pegged to EUR (not USD), a **EUR-denominated or EUR-indexed PPA carries materially lower currency risk than a USD-denominated one** — recommend structuring the PV offtake accordingly, feeding into §8's financial structure and §7's FX/PPA mismatch risk line.
+
+**Open item for engineering/legal closure:** dust/Harmattan soiling can cut output 25-50%+ without active cleaning (~biweekly cleaning recommended in peak season) — budget explicitly into O&M for whichever scenario(s) are selected.
 
 ## 10. China–Senegal Strategic Rationale
 

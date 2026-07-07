@@ -7,10 +7,10 @@
 | Project introduction (text) | ⏳ pending upload |
 | Promotional video | ⏳ pending upload |
 | 44-page architectural design book | ⏳ pending upload |
-| Senegal FDI risk & compliance research | 🔄 in progress (background agent) |
-| Solar PV multi-scenario research | 🔄 in progress (background agent) |
-| English proposal draft | 📝 outline started — `drafts/proposal_outline_en.md` |
-| 中文企划书大纲 | 📝 outline started — `drafts/proposal_outline_zh.md` |
+| Senegal FDI risk & compliance research | ✅ complete — `research/senegal_fdi_risk_compliance.md` |
+| Solar PV multi-scenario research | ✅ complete — `research/senegal_solar_pv_options.md` |
+| English proposal draft | 📝 outline started — `drafts/proposal_outline_en.md` (research sections still need to be woven in) |
+| 中文企划书大纲 | 📝 outline started — `drafts/proposal_outline_zh.md` (research sections still need to be woven in) |
 
 ## Folder layout
 
