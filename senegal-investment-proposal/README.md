@@ -15,8 +15,9 @@
 | Project introduction (text) | ⏳ still useful if available (for financials/track record) |
 | Senegal FDI risk & compliance research | ✅ complete — `research/senegal_fdi_risk_compliance.md` |
 | Solar PV multi-scenario research | ✅ complete — `research/senegal_solar_pv_options.md` |
-| English proposal draft | 🟡 §1-9 populated; financials/deal-structure (§8,11-13) awaiting client data — `drafts/proposal_outline_en.md` |
-| 中文企划书 | 🟡 §一-九 已填充；财务/交易结构（八、十一至十三节）待客户数据 — `drafts/proposal_outline_zh.md` |
+| **Clean formal proposal (EN)** | ✅ **`Coeur_Moussa_Investment_Proposal_EN.md`** — sendable; data gaps collected in Appendix A |
+| **Clean formal proposal (中文)** | ✅ **`Coeur_Moussa_投资提案_ZH.md`** — 可直接发送；待补数据集中于附录A |
+| Working outlines (with inline notes) | `drafts/proposal_outline_en.md` · `drafts/proposal_outline_zh.md` |
 
 ## Deal shape confirmed with client (2026-07-07)
 - **Rental model:** 2,000 villas are build-to-rent, single-owner, leased to Chantifa cooperative members → income-yield asset, not build-to-sell.
