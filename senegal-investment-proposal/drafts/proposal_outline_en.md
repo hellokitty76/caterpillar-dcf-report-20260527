@@ -14,8 +14,8 @@
 
 - **Coeur-Moussa is a ~60-hectare new town center located ~45 km from Dakar, delivering 2,000 social & affordable housing units** for members of the **Chantifa cooperative**, developed by SIVEP with financial partner Horizon Capital & Advisory and architect Kama & Associés.
 - The project is a complete new town — not just dwellings — with schools, nurseries, a medical center, commercial and administrative buildings, sports/cultural/leisure facilities, places of worship (church + mosque), landscaped public space, and a graded road network with bike lanes and green medians.
-- **Strategic fit for a Chinese investor:** (a) it directly matches the "low-cost social housing" interest Chinese participants flagged at the June 2025 China-Senegal Hangzhou economic forum; (b) it aligns with Senegal's national housing strategy (reducing the housing deficit, curbing informal urbanization); (c) the base design has **zero solar/renewable integration**, so a Chinese-supplied PV component is a clean additive opportunity (see §9), not a retrofit.
-- [REQUIRED - total investment ask (USD/CNY/XOF), what it buys (% equity / instrument — equity JV, debt, or PV-based co-investment), target IRR/return, hold period]
+- **Strategic fit for a Chinese investor (this is the lead argument — see §10):** the project is a **beachhead into the West African market for Chinese building materials, equipment, and companies**, with rental yield as the financial return and trade/market access as the strategic return. The Chinese side invests as equity partner (negotiations running with the **Shanghai Chamber of Commerce / 上海商会**), while the 2,000-unit + full-town build is a large, repeatable order for Chinese-exported steel, aluminum, tiles, sanitaryware, electrical gear — and solar panels (§9). Reinforced by: (a) the "low-cost social housing" interest Chinese participants flagged at the June 2025 Hangzhou forum; (b) alignment with Senegal's national housing strategy; (c) a base design with **zero solar integration**, making a Chinese PV supply a clean additive opportunity; (d) Sinosure/Eximbank export financing that exists precisely to support this kind of Chinese-export-led deal.
+- [REQUIRED - total investment ask (USD/CNY/XOF), what it buys (% equity), target return, hold period — client does not yet have these numbers]
 - Why Senegal, why now (1-2 sentences, pull from country overview §5)
 
 ## 2. Sponsor / Developer Profile
@@ -39,15 +39,15 @@
 - **Road network:** graded hierarchy — 30 m primary arterial, 20 m secondary, 15 m tertiary, 12 m paved internal block roads, 5 m pedestrian paths; main axes with bike lanes, wide sidewalks, and central green medians; explicit emphasis on soft mobility and quality of life.
 - **Design ethos:** simple, harmonious architecture drawing on Coeur-Moussa's local character; strong natural ventilation for year-round comfort (passive design — reduces cooling load, relevant to §9 solar sizing).
 - **Construction system (from technical specs):** conventional RC frame (BAEL 91), hollow-block masonry, hollow-core slab (hourdis creux) floors, monocouche roof waterproofing, ceramic + faience finishes, anti-termite-treated red-wood joinery, anodized aluminum windows, PVC plumbing with **on-site septic tanks (no centralized sewer)**, NFC 15-100 electrical, **standard grid connection only**, mandatory Bureau de Contrôle oversight + decennial insurance.
-- [REQUIRED - land tenure status of the 60 ha: already allocated to SIVEP/the cooperative? under what instrument — titre foncier, bail emphytéotique, or domaine national pending reclassification? (drives §7 risk)]
+- **Land status:** client states the 60 ha is **already allocated/granted** to the project. [REQUIRED - confirm the exact legal instrument — titre foncier, bail emphytéotique, or a cooperative/state allocation — since this determines mortgageability and security of the rental portfolio for a foreign investor (drives §7 risk)]
 - [REQUIRED - construction timeline/phasing; current status (pre-construction / under way / partially built)]
 - [REQUIRED - pricing/cost basis: technical specs define quality/methods but contain no priced BOQ — a costed budget is needed for §8]
 
-## 4. Market Overview — Senegalese Social/Affordable Housing
+## 4. Market Overview — Senegalese Social/Affordable Rental Housing
 
 - **Demand drivers:** Senegal's structural housing deficit and rapid, partly-informal urbanization in the greater-Dakar corridor; the project is explicitly positioned to reduce that deficit and curb informal settlement, in line with the national housing strategy.
-- **Off-take model:** unlike a market-rate development, primary demand is the **Chantifa cooperative membership** — a defined beneficiary pool rather than open-market absorption. This de-risks sales absorption but caps pricing (affordable/social by design). [REQUIRED - cooperative size/committed take-up, unit allocation price, and any government housing-program support or guarantees]
-- [REQUIRED - comparable social/affordable programs and pricing benchmarks in the greater-Dakar corridor (e.g. Diamniadio, "100,000 logements" national program) for context]
+- **Off-take model — rental, not sale:** the 2,000 villas are **rented** to members of the **Chantifa cooperative** (a defined tenant pool), with a single landlord owner. So the demand metric is **occupancy and rent collection**, not sales absorption — this de-risks demand (a committed cooperative tenant base) and makes the asset a recurring-income play. [REQUIRED - cooperative size/committed tenant take-up, monthly rent per F3/F4, any government social-housing rent subsidy or guarantee]
+- [REQUIRED - comparable social/affordable rental programs and rent benchmarks in the greater-Dakar corridor (e.g. Diamniadio, the national housing program) for context]
 
 ## 5. Country & Investment Climate Overview — Senegal
 
@@ -81,7 +81,7 @@
 |---|---|---|---|
 | **Faye-Sonko institutional rupture (May-June 2026)** — live, unresolved power struggle with street-mobilization capacity on both sides | High (ongoing) | High | Monitor continuously through signing; build a political-risk contingency/timing clause into the deal structure; do not treat as background noise |
 | Sovereign debt/rating crisis (Caa1/CCC+, suspended IMF program) | High (ongoing) | Medium-High | Structure financing to avoid direct sovereign-credit exposure; price political-risk insurance into returns |
-| Land title / customary tenure disputes (domaine national fraud, multiple sales) | Medium-High (site-dependent) | High | Full état hypothécaire title-history search via notary; prefer bail emphytéotique → titre foncier conversion path over raw domaine national occupancy |
+| Land title / tenure security (land reported already allocated, but instrument unconfirmed) | Medium (partly de-risked by the allocation) | High | Confirm the exact instrument (titre foncier / bail emphytéotique) and that it is mortgageable and held by the rental SPV; full état hypothécaire title-history search via notary before closing |
 | Currency convertibility / repatriation friction (2025 BCEAO tightening) | Medium | Medium | Route all flows through an approved local bank from day one; retain UEMOA-qualified counsel; consider EUR-denominated financing tranches |
 | CFA-exit / currency-reform political risk | Low-Medium (medium-term) | Medium | Disclose candidly; note Senegal's 2025 XOF bond-market behavior as a countervailing signal against near-term rupture |
 | Regulatory/permitting delay | Medium | Medium | Budget 3 months (not the optimistic 28-40 day target) for permitting in the construction timeline |
@@ -93,26 +93,30 @@ This section is the credibility anchor for a "全方位分析" (comprehensive an
 
 ## 8. Financial Structure
 
-- [REQUIRED - total project cost breakdown: land, hard costs, soft costs, contingency, solar component cost]
-- [REQUIRED - capital stack: equity (Senegalese sponsor vs Chinese investor split), debt, any concessional financing]
+**Model type: income-producing rental asset (build-to-rent), NOT build-to-sell.** The 2,000 villas are held by a single owner (SIVEP / the cooperative / a project SPV) and rented to Chantifa cooperative members, so returns come from **recurring rental yield**, not sales proceeds. Frame the whole financial section around a stabilized-yield asset, with the solar component as an additional cash-flow/cost-saving layer.
+
+- [REQUIRED - total project cost: land, hard costs (2,000 units + full town infrastructure — roads, utilities, schools, medical, worship, landscaping), soft costs, contingency, solar component cost]
+- [REQUIRED - rental assumptions: monthly rent per F3 / F4, target occupancy, rent escalation, cooperative-member take-up commitment, any government/social-housing rent subsidy or guarantee]
+- [REQUIRED - capital stack: equity (SIVEP/cooperative vs Chinese investor split), debt, any concessional financing]
 - [REQUIRED - use of proceeds for the specific investment ask]
-- Return projections: target IRR, equity multiple, cash yield during operations, hold period — [REQUIRED - underlying pro forma; this proposal should NOT publish return numbers without a supporting financial model]
-- Sensitivity notes (construction cost overrun, FX movement, absorption delay)
+- Return projections: **stabilized net rental yield**, target IRR, equity multiple, cash yield during operations, hold period — [REQUIRED - underlying pro forma; do NOT publish return numbers without a supporting model]
+- Solar's financial contribution: reduces landlord operating cost (common-area/tenant electricity) and/or adds a resale-to-tenant or net-metering revenue line — feeds this section (quantify once the PV scenario is chosen in §9)
+- Sensitivity notes (construction cost overrun, FX movement, occupancy/rent shortfall, solar output/soiling derate)
 
 ## 9. Renewable Energy (Solar PV) Component — Multiple Scenarios
 
 *[RESEARCH COMPLETE — full detail, citations, and cost sourcing in `../research/senegal_solar_pv_options.md`]*
 
-**Project fit note:** Coeur-Moussa is **2,000 individual villas on their own 150/200 m² plots** across a single **60-hectare master-planned site** with cooperative governance. This is close to an ideal setup for PV: (i) each villa owns its own roof, so the rooftop-rights legal gap that the research flagged for condominium buildings **largely dissolves** — rooftop distributed PV (scenario a) becomes clean per villa; and (ii) the large contiguous site + single cooperative counterparty also supports a centralized farm/microgrid (b) or a development-wide PPA/BOOT (d). All four scenarios stay live; the villa structure makes (a) more attractive than the generic research assumed.
+**Project fit note:** Coeur-Moussa is **2,000 villas on a single 60-hectare master-planned site, all held by ONE owner as rental housing** (build-to-rent, see §8). This is close to an ideal PV setup: (i) a **single landlord owns all 2,000 roofs**, so the rooftop-rights legal gap the research flagged for condominiums is **entirely moot** — no per-owner negotiation, and the landlord captures the electricity value directly (cutting operating cost, reselling to tenants, or net-metering surplus); (ii) that same single, rent-earning owner is a **far more bankable PPA/BOOT counterparty than 2,000 fragmented homeowners would be**, which materially strengthens scenario (d); and (iii) the large contiguous site also supports a centralized farm/microgrid (b) or hybrid+storage (c). All four scenarios are live and the single-owner rental structure improves the economics of every one of them.
 
 **Regulatory sweet spot (Decree 2023-286):** solar PV **≤1MW per installation** qualifies for a light "declaration" regime (no license); anything larger, or any installation selling surplus to SENELEC, needs a full 25-year CRSE license. Per-villa rooftop systems sit comfortably under the declaration threshold; a 60-ha centralized array would need the 25-year license. This shapes which scenario is "fastest to permit" vs. "best economics at scale."
 
 | Scenario | Est. CAPEX/kW | Ownership / role split | Key risk | Best fit |
 |---|---|---|---|---|
-| (a) Rooftop distributed per villa | ~$1,000-1,400/kW (estimate) | Each villa owner (via the cooperative) owns its roof array; Chinese partner supplies+installs (± O&M contract) | Fragmented dust-cleaning logistics across 2,000 roofs (favors a bundled Chinese O&M offer); rooftop-rights gap largely moot given individual plots | **Strong fit given 2,000 individual villas** — each stays under the ≤1MW declaration regime, direct owner bill-savings |
-| (b) Centralized solar farm + private microgrid | ~$1,000-1,300/kW | Development/SPV owns; Chinese partner as EPC + possible minority equity (mirrors CGN's Malicounda stake) | Almost certainly triggers the 25yr CRSE license; land competes with saleable area | Master-planned sites with dedicated utility land |
-| (c) Hybrid PV + battery storage (± genset) | PV above + battery ~$250-450/kWh (estimate) | Development/SPV owns; Chinese partner supplies integrated PV+BESS package | Battery capex/payback; ~10-15yr replacement cycle | **Best matched to Senegal's actual grid-reliability profile — recommended default** for a reliability-marketed product |
-| (d) PV + Chinese EPC/PPA or BOOT/BOO | Same hardware cost, borne by Chinese EPC/investor, recovered via 15-25yr PPA | Chinese partner designs/finances/builds/owns/operates; development pays per-kWh, no upfront capex | Development is a thin credit counterparty vs. SENELEC; USD/EUR-vs-XOF currency mismatch | Best if Chinese side wants a long-term revenue stream and the development can offer credit enhancement |
+| (a) Rooftop distributed per villa | ~$1,000-1,400/kW (estimate) | Single landlord SPV owns all 2,000 roof arrays; Chinese partner supplies+installs (± O&M contract) | Dust-cleaning logistics across 2,000 roofs (favors a bundled Chinese O&M offer); rooftop-rights gap fully moot (one owner) | **Strong fit** — each ≤1MW villa system stays in the declaration regime; landlord captures the electricity value as an operating-cost saving / tenant-resale line |
+| (b) Centralized solar farm + private microgrid | ~$1,000-1,300/kW | Landlord SPV owns; Chinese partner as EPC + possible minority equity (mirrors CGN's Malicounda stake) | Triggers the 25yr CRSE license; land use competes with dwelling/amenity area | Uses part of the 60-ha for a "campus utility" feeding the whole town via private microgrid |
+| (c) Hybrid PV + battery storage (± genset) | PV above + battery ~$250-450/kWh (estimate) | Landlord SPV owns; Chinese partner supplies integrated PV+BESS package | Battery capex/payback; ~10-15yr replacement cycle | **Best matched to Senegal's actual grid-reliability profile — recommended default** for a reliability-marketed rental product |
+| (d) PV + Chinese EPC/PPA or BOOT/BOO | Same hardware cost, borne by Chinese EPC/investor, recovered via 15-25yr PPA | Chinese partner designs/finances/builds/owns/operates; landlord SPV pays per-kWh, no upfront capex | Counterparty credit — **materially improved vs. fragmented homeowners** since the offtaker is one rent-earning SPV; USD/EUR-vs-XOF currency mismatch | Best if Chinese side wants a long-term revenue stream; the single rental SPV can offer credit enhancement (rent escrow, parent guarantee) |
 
 **Credibility anchor:** CGN Europe Energy (China General Nuclear Power Corp's European renewables arm) owns 90% of the operating 22MW Malicounda solar plant in Senegal — the strongest direct Chinese-Senegal solar precedent, lead with it. No large Chinese-financed *utility-scale* Senegalese solar EPC project was found beyond this equity stake — frame this project as extending that relationship into a new (EPC/BOOT) role, not continuing an existing EPC track record.
 
@@ -122,26 +126,32 @@ This section is the credibility anchor for a "全方位分析" (comprehensive an
 
 **Open item for engineering/legal closure:** dust/Harmattan soiling can cut output 25-50%+ without active cleaning (~biweekly cleaning recommended in peak season) — budget explicitly into O&M for whichever scenario(s) are selected.
 
-## 10. China–Senegal Strategic Rationale
+## 10. China–Senegal Strategic Rationale — a market-entry play, not just a financial return
 
-- BRI/diplomatic alignment (detail from §5)
-- Precedent Chinese investments in Senegalese infrastructure/real estate as comparables
-- Why this project specifically fits a Chinese investor's Africa strategy
+**The core thesis: Coeur-Moussa is a beachhead into the West African market for Chinese building materials, equipment, and companies** — the rental yield is the financial return, but the strategic return is trade/market access. This is the framing to lead with for a Chinese investor audience (negotiations are running with the **Shanghai Chamber of Commerce / 上海商会**).
+
+- **Building-materials export channel (concrete, not hypothetical):** the SIVEP technical specs already require **imported steel rebar (FE500), aluminum joinery, ceramic/grès tiles, faience, sanitaryware, PVC piping, and electrical gear** — all categories where Chinese manufacturers are highly competitive. A 2,000-unit + full-town-infrastructure program is a large, repeatable materials order that a Chinese supplier base can fill, using this project as a reference/demonstration for the broader Senegalese and West African market.
+- **Solar panels are part of the same export story** — the PV component (§9) is another line of Chinese equipment sold into the project.
+- **BRI/diplomatic alignment:** upgraded 2024 Comprehensive Strategic Cooperative Partnership; June 2025 Hangzhou forum where Chinese participants explicitly flagged interest in low-cost social housing; China is already Senegal's #1 import supplier (detail from §5).
+- **Financing fit:** because the thesis is Chinese-export-led, **Sinosure export-credit insurance and China Eximbank concessional lending are a natural fit** — they exist precisely to support Chinese equipment/material exports and to de-risk them politically (see §7 mitigations and §9 financing tools).
+- **Precedent Chinese projects in Senegal** as credibility comparables (from §5): CNTIC/Huawei 2×50MW solar+storage (2025), CGN Europe Energy's Malicounda solar stake, CRBC roads, Huawei digital infrastructure.
 
 ## 11. Deal Structure & Governance
 
-- [REQUIRED - proposed JV structure: equity split, board composition, decision rights, reserved matters]
-- [REQUIRED - proposed instrument if not straight equity: preferred equity, mezzanine debt, PPA/BOOT for the solar piece only]
-- Reference `contract-and-proposal-writer` skill for the eventual SHA/JV agreement drafting once terms are agreed
+- **Chinese side = equity investor** (per client); counterparty in negotiation is the **Shanghai Chamber of Commerce (上海商会)**. [REQUIRED - confirm the investing vehicle/consortium and whether the materials-supply role is bundled with the equity investment or contracted separately]
+- [REQUIRED - proposed JV/equity structure: equity split between SIVEP/cooperative and the Chinese investor, board composition, decision rights, reserved matters]
+- [REQUIRED - how the three value streams are structured: (i) equity in the rental-housing SPV, (ii) building-materials supply contracts, (iii) the solar component (equity, EPC, or PPA/BOOT per §9) — these can be one bundled deal or separate agreements]
+- Reference `contract-and-proposal-writer` skill for the eventual SHA/JV, supply, and PPA/EPC agreement drafting once terms are agreed
 
 ## 12. Implementation Timeline
 
-- Milestone roadmap: JV signing → permitting → construction start → solar installation → phased handover/occupancy → stabilization
-- [REQUIRED - actual dates once construction schedule from the design book is available]
+- Milestone roadmap: investment/JV signing → (land instrument confirmed) → permitting → materials supply chain set up → construction start → solar installation → phased lease-up/occupancy → stabilization
+- [REQUIRED - actual dates once the construction/phasing schedule is available]
 
 ## 13. Exit Strategy
 
-- [REQUIRED - hold period, exit route: unit sales, bulk sale, refinance-and-hold, REIT vehicle]
+- **This is a hold-for-yield rental asset** (build-to-rent, §8), so the base case is holding for recurring rental income, not a near-term sale.
+- [REQUIRED - target hold period and exit route: hold-for-yield, sale of the stabilized income-producing portfolio to an institutional/regional buyer, refinance-and-hold, or a REIT/securitization vehicle. Note: the ongoing Chinese materials-supply relationship may have its own value/continuity independent of any equity exit]
 
 ## 14. Appendices
 

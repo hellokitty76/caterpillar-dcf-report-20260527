@@ -47,6 +47,21 @@ Source: client's Chinese-language transcription of the project promotional video
 - Main axes include **bike lanes, wide sidewalks, and a central green median**; parking and public gardens throughout.
 - Explicit emphasis on **soft/slow mobility** and quality of life.
 
+## Client clarification (2026-07-07): DEAL INTENT & land status
+- **Chinese side = equity investor.** The counterparty being negotiated with is the **Shanghai Chamber of Commerce (上海商会)**.
+- **Strategic angle is trade/market-entry, not just financial ROI:** building this housing program consumes large volumes of construction materials, **many of which can be exported from China** into the project. Coeur-Moussa is framed as a **beachhead / entry point into the West African market** for Chinese building materials (and, by extension, Chinese companies and equipment — including the solar panels).
+  - This dovetails with the research: the "EPC + Finance" model, Sinosure export-credit insurance (which exists to insure Chinese exports), China Eximbank concessional lending, and the fact that China is already Senegal's #1 import supplier. The building-materials-export thesis makes Sinosure/Eximbank support a natural fit.
+  - Concrete hook: the SIVEP technical specs already call for **imported steel rebar ("acier importé", FE500), aluminum joinery, ceramic/grès tiles, faience, sanitaryware, PVC piping, and electrical gear** — all categories where Chinese manufacturers are highly competitive. The materials-export opportunity is not hypothetical; it's written into the build spec.
+- **Land status:** client states the 60 ha is **"already allocated/granted (划拨)"** to the project. Treat as: land secured, but the **exact legal instrument (titre foncier vs. bail emphytéotique vs. a cooperative/state allocation) still needs confirmation** — it determines mortgageability and security for a foreign investor. [REQUIRED - confirm instrument.]
+- **Financials:** client does not yet have the numbers (to come from SIVEP/Horizon).
+
+## Client clarification (2026-07-07): RENTAL model
+- The 2,000 villas are **rental housing (build-to-rent)** — a **single owner (SIVEP / the cooperative / a project SPV) retains title and rents the units to Chantifa cooperative members**. This is NOT a build-to-sell development.
+- **Consequences:**
+  1. **Solar rooftop rights become trivial** — a single landlord owns all 2,000 roofs, so no per-owner negotiation is needed to install PV, and the landlord captures the electricity value (self-consumption to cut common-area/tenant costs, resale to tenants, or net-metering surplus). Confirms rooftop PV (scenario a) is now centrally owned, and makes the rental SPV a single, more-bankable PPA/BOOT counterparty (strengthens scenarios b/c/d vs. the earlier "thin counterparty" caveat).
+  2. **Investment nature shifts from development-and-sale to a yield/income-producing asset** — recurring rental cash flow, not one-off sales proceeds. This reshapes §4 (off-take = occupancy/rent, not sales absorption), §8 (financials = rental yield on total dev cost), and §13 (exit = hold-for-yield or sale of a stabilized income portfolio).
+  3. Land tenure of the 60 ha still matters — the SPV needs a secure, mortgageable long-term title (titre foncier or bail emphytéotique) to hold a rental portfolio and to pledge it for financing. [REQUIRED - confirm.]
+
 ## Implications for the proposal
 
 1. **This is social/cooperative housing, not market-rate resi.** The investment thesis, off-take, pricing, and (critically) the applicable **affordable-housing tax incentives** all hinge on this. The research's flagged-but-unconfirmed affordable-housing tax rates ("5%/1%") and the national-housing-strategy alignment now become central, not peripheral — worth having counsel confirm these specifically for a cooperative/social-housing project.
