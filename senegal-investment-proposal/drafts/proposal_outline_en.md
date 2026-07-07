@@ -1,48 +1,53 @@
-# [PROJECT NAME] — Formal Investment Proposal
-### SIVEP Residential Housing Program, Dakar and Other Regions, Senegal
+# Coeur-Moussa New Town — Formal Investment Proposal
+### 2,000-Unit Social & Affordable Housing Program, Coeur-Moussa, ~45 km from Dakar, Senegal
 **Prepared for:** Prospective Chinese Investment Partners
-**Prepared by:** SIVEP (Société d'Investissement des Villes et Pôles) — Directeur Général: Amadou Dieng
+**Prepared by:** SIVEP (Société d'Investissement des Villes et Pôles) with Horizon Capital & Advisory
+**Architect:** Kama & Associés
 **Date:** [REQUIRED — issue date]
 **Confidentiality:** [REQUIRED — e.g. "Strictly Private & Confidential — Not for Distribution"]
 
-> Status: OUTLINE. Sections marked `[REQUIRED - ...]` need project-specific input (from the introduction doc, video, and 44-page design book) or a decision from the client. Sections marked `[RESEARCH PENDING]` will be filled from the background research briefs in `../research/`.
+> Status: DRAFT. Project facts below are drawn from the SIVEP technical specifications PDF (`../research/project_facts_from_sivep_cctp.md`) and the promotional video transcription (`../research/project_facts_from_video.md`). Sections marked `[REQUIRED - ...]` still need input (mostly financials, land tenure status, and track records). Country-risk (§5-7) and solar (§9) sections are backed by completed research briefs.
 
 ---
 
 ## 1. Executive Summary
 
-- One-paragraph project snapshot: **SIVEP is a multi-site national housing program spanning Dakar and other regions of Senegal** (not a single-plot development) — [REQUIRED: total scale in units/m²/GFA across all sites, or the specific site(s)/phase this investment round covers, total investment ask, target IRR/return, hold period]
-- [REQUIRED - exact site location(s)/GPS or addresses for the phase being financed — "Dakar and other regions" from the technical specs is program-wide, not site-specific]
-- [REQUIRED - total investment ask (USD/CNY/XOF) and what % equity it buys, or what instrument — equity JV, debt, or PPA-based solar co-investment]
+- **Coeur-Moussa is a ~60-hectare new town center located ~45 km from Dakar, delivering 2,000 social & affordable housing units** for members of the **Chantifa cooperative**, developed by SIVEP with financial partner Horizon Capital & Advisory and architect Kama & Associés.
+- The project is a complete new town — not just dwellings — with schools, nurseries, a medical center, commercial and administrative buildings, sports/cultural/leisure facilities, places of worship (church + mosque), landscaped public space, and a graded road network with bike lanes and green medians.
+- **Strategic fit for a Chinese investor:** (a) it directly matches the "low-cost social housing" interest Chinese participants flagged at the June 2025 China-Senegal Hangzhou economic forum; (b) it aligns with Senegal's national housing strategy (reducing the housing deficit, curbing informal urbanization); (c) the base design has **zero solar/renewable integration**, so a Chinese-supplied PV component is a clean additive opportunity (see §9), not a retrofit.
+- [REQUIRED - total investment ask (USD/CNY/XOF), what it buys (% equity / instrument — equity JV, debt, or PV-based co-investment), target IRR/return, hold period]
 - Why Senegal, why now (1-2 sentences, pull from country overview §5)
-- Why this project fits a Chinese investor's strategy (BRI alignment, first-mover diaspora/African urbanization thesis, solar co-investment angle — the base building design currently has **zero solar/renewable integration**, confirmed from the technical specs, so the PV component is a clean, additive opportunity, not a retrofit)
 
 ## 2. Sponsor / Developer Profile
 
-- **Developer:** SIVEP (Société d'Investissement des Villes et Pôles), Directeur Général Amadou Dieng. [REQUIRED - incorporation jurisdiction/date, years operating, prior completed projects with size/value, local partnerships, licenses held, APIX/Investment Code agrément status if already obtained]
-- Local team and governance structure
-- [REQUIRED - any existing relationship or introduction path to the Chinese investor(s)]
+- **Developer/sponsor:** SIVEP (Société d'Investissement des Villes et Pôles). [REQUIRED - incorporation jurisdiction/date, years operating, prior completed projects, licenses, APIX/Investment Code agrément status]
+- **Financial partner / advisor:** Horizon Capital & Advisory. [REQUIRED - confirm role and mandate — presumably structuring the capital raise; confirm relationship to the intended instrument in §11]
+- **Architect:** Kama & Associés — conceived and developed the master plan and unit designs.
+- **Beneficiary structure:** members of the **Chantifa cooperative** — this is cooperative / social housing, not open-market speculative residential, which shapes the off-take, pricing, and applicable affordable-housing incentives.
+- [REQUIRED - any existing relationship or introduction path to the Chinese investor(s); SIVEP/Horizon/Kama track records]
 
 ## 3. Project Overview
 
-*Source: SIVEP technical specifications document (`assets/SIVEP_Cahier_de_charge_du_programme_des_logements.pdf`, received) — see `../research/project_facts_from_sivep_cctp.md` for the full extraction. Introduction document and video still pending.*
+*Source: SIVEP technical specifications PDF (`assets/SIVEP_Cahier_de_charge_du_programme_des_logements.pdf`) + promotional video transcription. Full extractions in `../research/project_facts_from_sivep_cctp.md` and `../research/project_facts_from_video.md`.*
 
-- **Program scope:** SIVEP's housing program covers **Dakar and other regions** — confirm whether this proposal covers the full national program or one specific site/phase. [REQUIRED — this determines whether §6/§7 land-tenure risk is assessed once or per-site]
-- **Unit types confirmed:**
-  - **Type F3** (living room + master bedroom + 1 bedroom + kitchen + toilet + family space): ~50.65m² per unit (Salon 15m², master bedroom 12m², bedroom 10m², kitchen 6m², toilet 4m², family space 3.65m²)
-  - **Type F4** (living room + 2 bedrooms + kitchen + toilet + bathroom + family space): ~73.41m² per unit (Salon 15.48m², master bedroom 14.36m², bathroom 3.41m², 2 bedrooms at 10m² each, kitchen 6m², toilet 4m², family space 13.16m²)
-- **Construction system (confirmed):** conventional RC frame (BAEL 91), hollow-block masonry, hollow-core slab (hourdis creux) floors, monocouche roof waterproofing, ceramic tile + faience finishes, red-wood joinery with anti-termite treatment, anodized aluminum windows/doors, standard PVC plumbing with **on-site septic tanks (not centralized sewer)**, NFC 15-100 electrical, **standard grid connection only — no solar/renewable design element present**, mandatory third-party technical control (Bureau de Contrôle) and decennial insurance.
-- [REQUIRED - total unit count and mix (how many F3 vs F4, at how many sites), total site area/GFA, phasing plan]
-- Site: location, land area, zoning/land title status (freehold `titre foncier` vs leasehold vs `domaine national` — confirm which, this materially changes risk in §7) — [REQUIRED]
-- Construction timeline and phasing plan — [REQUIRED]
-- [REQUIRED - land acquisition status: owned outright / under option / to be acquired with proceeds]
-- [REQUIRED - pricing/cost basis: the technical specs document defines construction quality/methods but contains no priced bill of quantities — a separate costed BOQ or budget is needed for §8]
+- **Site:** Coeur-Moussa, ~45 km from Dakar; ~**60 hectares**; a master-planned new town center (nouveau pôle urbain) in the greater-Dakar growth corridor (comparable distance to Diamniadio ~35 km).
+- **Scale:** **2,000 dwellings**, individual villas on their own plots, two types:
+  - **Milvilla F3** — on **150 m² land plots** (~50.65 m² built: living room 15m², master bedroom 12m², bedroom 10m², kitchen 6m², toilet 4m², family space 3.65m²)
+  - **Milvilla F4** — on **200 m² land plots** (~73.41 m² built: living room 15.48m², master bedroom 14.36m², bathroom 3.41m², 2 bedrooms at 10m², kitchen 6m², toilet 4m², family space 13.16m²)
+  - [REQUIRED - F3/F4 split (how many of each of the 2,000)]
+- **Full amenity program:** administrative building, commercial spaces, schools, nurseries/educational institutions, medical center, sports/cultural/leisure facilities, church + mosque, sustainable waste management, resident security, landscaped public space (shade areas, walkways, children's playgrounds, public gardens, parking).
+- **Road network:** graded hierarchy — 30 m primary arterial, 20 m secondary, 15 m tertiary, 12 m paved internal block roads, 5 m pedestrian paths; main axes with bike lanes, wide sidewalks, and central green medians; explicit emphasis on soft mobility and quality of life.
+- **Design ethos:** simple, harmonious architecture drawing on Coeur-Moussa's local character; strong natural ventilation for year-round comfort (passive design — reduces cooling load, relevant to §9 solar sizing).
+- **Construction system (from technical specs):** conventional RC frame (BAEL 91), hollow-block masonry, hollow-core slab (hourdis creux) floors, monocouche roof waterproofing, ceramic + faience finishes, anti-termite-treated red-wood joinery, anodized aluminum windows, PVC plumbing with **on-site septic tanks (no centralized sewer)**, NFC 15-100 electrical, **standard grid connection only**, mandatory Bureau de Contrôle oversight + decennial insurance.
+- [REQUIRED - land tenure status of the 60 ha: already allocated to SIVEP/the cooperative? under what instrument — titre foncier, bail emphytéotique, or domaine national pending reclassification? (drives §7 risk)]
+- [REQUIRED - construction timeline/phasing; current status (pre-construction / under way / partially built)]
+- [REQUIRED - pricing/cost basis: technical specs define quality/methods but contain no priced BOQ — a costed budget is needed for §8]
 
-## 4. Market Overview — Senegalese Residential Real Estate
+## 4. Market Overview — Senegalese Social/Affordable Housing
 
-- Urbanization and housing demand drivers (Dakar metro growth, middle-class formation, diaspora remittance-funded home purchases)
-- [REQUIRED or RESEARCH - comparable projects/pricing benchmarks in the target city; target buyer/renter profile — local, diaspora, expat?]
-- Absorption assumption and basis for it
+- **Demand drivers:** Senegal's structural housing deficit and rapid, partly-informal urbanization in the greater-Dakar corridor; the project is explicitly positioned to reduce that deficit and curb informal settlement, in line with the national housing strategy.
+- **Off-take model:** unlike a market-rate development, primary demand is the **Chantifa cooperative membership** — a defined beneficiary pool rather than open-market absorption. This de-risks sales absorption but caps pricing (affordable/social by design). [REQUIRED - cooperative size/committed take-up, unit allocation price, and any government housing-program support or guarantees]
+- [REQUIRED - comparable social/affordable programs and pricing benchmarks in the greater-Dakar corridor (e.g. Diamniadio, "100,000 logements" national program) for context]
 
 ## 5. Country & Investment Climate Overview — Senegal
 
@@ -98,11 +103,13 @@ This section is the credibility anchor for a "全方位分析" (comprehensive an
 
 *[RESEARCH COMPLETE — full detail, citations, and cost sourcing in `../research/senegal_solar_pv_options.md`]*
 
-**Regulatory sweet spot (Decree 2023-286):** solar PV **≤1MW per installation** qualifies for a light "declaration" regime (no license); anything larger, or any installation selling surplus to SENELEC, needs a full 25-year CRSE license. This single fact should shape which scenario is pitched as "fastest to permit" vs. "best economics at scale."
+**Project fit note:** Coeur-Moussa is **2,000 individual villas on their own 150/200 m² plots** across a single **60-hectare master-planned site** with cooperative governance. This is close to an ideal setup for PV: (i) each villa owns its own roof, so the rooftop-rights legal gap that the research flagged for condominium buildings **largely dissolves** — rooftop distributed PV (scenario a) becomes clean per villa; and (ii) the large contiguous site + single cooperative counterparty also supports a centralized farm/microgrid (b) or a development-wide PPA/BOOT (d). All four scenarios stay live; the villa structure makes (a) more attractive than the generic research assumed.
+
+**Regulatory sweet spot (Decree 2023-286):** solar PV **≤1MW per installation** qualifies for a light "declaration" regime (no license); anything larger, or any installation selling surplus to SENELEC, needs a full 25-year CRSE license. Per-villa rooftop systems sit comfortably under the declaration threshold; a 60-ha centralized array would need the 25-year license. This shapes which scenario is "fastest to permit" vs. "best economics at scale."
 
 | Scenario | Est. CAPEX/kW | Ownership / role split | Key risk | Best fit |
 |---|---|---|---|---|
-| (a) Rooftop distributed per building | ~$1,000-1,400/kW (estimate) | Homeowners/HOA own; Chinese partner supplies+installs only | No Senegal statute on shared/condo rooftop-PV rights (legal gap); fragmented dust-cleaning logistics | Villas/low-rise, owner bill-savings pitch |
+| (a) Rooftop distributed per villa | ~$1,000-1,400/kW (estimate) | Each villa owner (via the cooperative) owns its roof array; Chinese partner supplies+installs (± O&M contract) | Fragmented dust-cleaning logistics across 2,000 roofs (favors a bundled Chinese O&M offer); rooftop-rights gap largely moot given individual plots | **Strong fit given 2,000 individual villas** — each stays under the ≤1MW declaration regime, direct owner bill-savings |
 | (b) Centralized solar farm + private microgrid | ~$1,000-1,300/kW | Development/SPV owns; Chinese partner as EPC + possible minority equity (mirrors CGN's Malicounda stake) | Almost certainly triggers the 25yr CRSE license; land competes with saleable area | Master-planned sites with dedicated utility land |
 | (c) Hybrid PV + battery storage (± genset) | PV above + battery ~$250-450/kWh (estimate) | Development/SPV owns; Chinese partner supplies integrated PV+BESS package | Battery capex/payback; ~10-15yr replacement cycle | **Best matched to Senegal's actual grid-reliability profile — recommended default** for a reliability-marketed product |
 | (d) PV + Chinese EPC/PPA or BOOT/BOO | Same hardware cost, borne by Chinese EPC/investor, recovered via 15-25yr PPA | Chinese partner designs/finances/builds/owns/operates; development pays per-kWh, no upfront capex | Development is a thin credit counterparty vs. SENELEC; USD/EUR-vs-XOF currency mismatch | Best if Chinese side wants a long-term revenue stream and the development can offer credit enhancement |
