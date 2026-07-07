@@ -1,7 +1,7 @@
 # [PROJECT NAME] — Formal Investment Proposal
-### Residential Development, [City/Region], Senegal
+### SIVEP Residential Housing Program, Dakar and Other Regions, Senegal
 **Prepared for:** Prospective Chinese Investment Partners
-**Prepared by:** [SPONSOR / DEVELOPER NAME]
+**Prepared by:** SIVEP (Société d'Investissement des Villes et Pôles) — Directeur Général: Amadou Dieng
 **Date:** [REQUIRED — issue date]
 **Confidentiality:** [REQUIRED — e.g. "Strictly Private & Confidential — Not for Distribution"]
 
@@ -11,27 +11,32 @@
 
 ## 1. Executive Summary
 
-- One-paragraph project snapshot: location, scale (units/m²/GFA), total investment ask, target IRR/return, hold period
-- [REQUIRED - project name, exact location/GPS or address, developer/sponsor name and track record]
+- One-paragraph project snapshot: **SIVEP is a multi-site national housing program spanning Dakar and other regions of Senegal** (not a single-plot development) — [REQUIRED: total scale in units/m²/GFA across all sites, or the specific site(s)/phase this investment round covers, total investment ask, target IRR/return, hold period]
+- [REQUIRED - exact site location(s)/GPS or addresses for the phase being financed — "Dakar and other regions" from the technical specs is program-wide, not site-specific]
 - [REQUIRED - total investment ask (USD/CNY/XOF) and what % equity it buys, or what instrument — equity JV, debt, or PPA-based solar co-investment]
-- Why Senegal, why now (1-2 sentences, pull from country overview §6)
-- Why this project fits a Chinese investor's strategy (BRI alignment, first-mover diaspora/African urbanization thesis, solar co-investment angle)
+- Why Senegal, why now (1-2 sentences, pull from country overview §5)
+- Why this project fits a Chinese investor's strategy (BRI alignment, first-mover diaspora/African urbanization thesis, solar co-investment angle — the base building design currently has **zero solar/renewable integration**, confirmed from the technical specs, so the PV component is a clean, additive opportunity, not a retrofit)
 
 ## 2. Sponsor / Developer Profile
 
-- [REQUIRED - developer entity name, incorporation jurisdiction, years operating, prior completed projects with size/value, local partnerships, licenses held]
+- **Developer:** SIVEP (Société d'Investissement des Villes et Pôles), Directeur Général Amadou Dieng. [REQUIRED - incorporation jurisdiction/date, years operating, prior completed projects with size/value, local partnerships, licenses held, APIX/Investment Code agrément status if already obtained]
 - Local team and governance structure
 - [REQUIRED - any existing relationship or introduction path to the Chinese investor(s)]
 
 ## 3. Project Overview
 
-*Source: introduction document, video, 44-page architectural design book (pending upload)*
+*Source: SIVEP technical specifications document (`assets/SIVEP_Cahier_de_charge_du_programme_des_logements.pdf`, received) — see `../research/project_facts_from_sivep_cctp.md` for the full extraction. Introduction document and video still pending.*
 
-- Site: location, land area, zoning/land title status (freehold `titre foncier` vs leasehold vs `domaine national` — confirm which, this materially changes risk in §8)
-- Program: unit count and mix (residential typologies), total GFA, amenities, phasing
-- Architectural/design highlights (summarize from the 44-page design book once available — do not just attach the PDF, extract the investment-relevant facts: unit sizes, sellable area, construction system/materials, expected build cost basis)
-- Construction timeline and phasing plan
+- **Program scope:** SIVEP's housing program covers **Dakar and other regions** — confirm whether this proposal covers the full national program or one specific site/phase. [REQUIRED — this determines whether §6/§7 land-tenure risk is assessed once or per-site]
+- **Unit types confirmed:**
+  - **Type F3** (living room + master bedroom + 1 bedroom + kitchen + toilet + family space): ~50.65m² per unit (Salon 15m², master bedroom 12m², bedroom 10m², kitchen 6m², toilet 4m², family space 3.65m²)
+  - **Type F4** (living room + 2 bedrooms + kitchen + toilet + bathroom + family space): ~73.41m² per unit (Salon 15.48m², master bedroom 14.36m², bathroom 3.41m², 2 bedrooms at 10m² each, kitchen 6m², toilet 4m², family space 13.16m²)
+- **Construction system (confirmed):** conventional RC frame (BAEL 91), hollow-block masonry, hollow-core slab (hourdis creux) floors, monocouche roof waterproofing, ceramic tile + faience finishes, red-wood joinery with anti-termite treatment, anodized aluminum windows/doors, standard PVC plumbing with **on-site septic tanks (not centralized sewer)**, NFC 15-100 electrical, **standard grid connection only — no solar/renewable design element present**, mandatory third-party technical control (Bureau de Contrôle) and decennial insurance.
+- [REQUIRED - total unit count and mix (how many F3 vs F4, at how many sites), total site area/GFA, phasing plan]
+- Site: location, land area, zoning/land title status (freehold `titre foncier` vs leasehold vs `domaine national` — confirm which, this materially changes risk in §7) — [REQUIRED]
+- Construction timeline and phasing plan — [REQUIRED]
 - [REQUIRED - land acquisition status: owned outright / under option / to be acquired with proceeds]
+- [REQUIRED - pricing/cost basis: the technical specs document defines construction quality/methods but contains no priced bill of quantities — a separate costed BOQ or budget is needed for §8]
 
 ## 4. Market Overview — Senegalese Residential Real Estate
 
